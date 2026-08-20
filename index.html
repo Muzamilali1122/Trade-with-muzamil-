@@ -6,6 +6,16 @@
 <meta name="theme-color" content="#050806"><meta name="color-scheme" content="dark light">
 <meta name="description" content="Trade With Muzamil — practical trading education, market insights, trading tools and automation support.">
 <title>Trade With Muzamil | Trading Education, Insights & Tools</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%23071009'/%3E%3Cpath d='M5 18V7m0 0h3m-3 0 1.5-2M12 20V5m0 0h3m-3 0 1.5-2M19 17V3m0 0h3m-3 0 1.5-2' stroke='%2328ff73' stroke-width='1.8' fill='none'/%3E%3Crect x='3.5' y='9' width='3' height='5' fill='%2328ff73'/%3E%3Crect x='10.5' y='8' width='3' height='7' fill='%2328ff73'/%3E%3Crect x='17.5' y='7' width='3' height='6' fill='%2328ff73'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Trade With Muzamil | Trading Education, Insights & Tools">
+<meta property="og:description" content="Practical trading education, market insights, trading tools and automation support — built around disciplined decision-making.">
+<meta property="og:image" content="https://trade-with-muzamil.vercel.app/assets/muzamil-portrait.png">
+<meta property="og:url" content="https://trade-with-muzamil.vercel.app/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Trade With Muzamil | Trading Education, Insights & Tools">
+<meta name="twitter:description" content="Practical trading education, market insights, trading tools and automation support.">
+<meta name="twitter:image" content="https://trade-with-muzamil.vercel.app/assets/muzamil-portrait.png">
 <style>
 :root{
   --bg:#030504; --panel:#080d0a; --panel2:#0b120e; --line:rgba(91,255,145,.16);
@@ -27,8 +37,12 @@ button,a{font:inherit}
 .container{width:min(1180px,92%);margin:auto}
 nav{position:fixed;top:0;left:0;right:0;height:76px;display:flex;align-items:center;z-index:50;background:rgba(3,5,4,.72);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.06)}
 .navin{display:flex;align-items:center;justify-content:space-between;gap:22px}
-.logo{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.8px;font-size:15px}
-.logo-icon{width:36px;height:36px;border:1px solid var(--line);border-radius:10px;display:grid;place-items:center;background:linear-gradient(145deg,#0d1b12,#071009);box-shadow:inset 0 0 20px rgba(40,255,115,.06)}
+.logo{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.8px;font-size:15px}
+.logo-text{display:flex;flex-direction:column;line-height:1.15}
+.logo-text em{font-style:normal;font-size:9px;font-weight:800;letter-spacing:2.4px;color:#b7c2bb}
+.logo-text b{font-size:16px;font-weight:1000;letter-spacing:.6px;background:linear-gradient(90deg,#f4d97a,#d7ad43 55%,#28ff73);-webkit-background-clip:text;background-clip:text;color:transparent}
+.logo-icon{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:radial-gradient(circle at 30% 20%,#132018,#050b06 72%);box-shadow:0 0 0 1px rgba(215,173,67,.55),0 0 18px rgba(40,255,115,.18),inset 0 0 14px rgba(215,173,67,.08);position:relative;flex-shrink:0}
+.logo-icon:before{content:"";position:absolute;inset:-3px;border-radius:14px;border:1px solid rgba(215,173,67,.25);pointer-events:none}
 .logo-icon svg{width:23px}
 .logo span{color:var(--green)}
 .links{display:flex;gap:24px;color:#c6cec9;font-size:13px}
@@ -115,6 +129,128 @@ body{background:#010302;perspective:1200px}
 .lightbox.open{display:flex}.lightbox img{max-width:min(94vw,1000px);max-height:90vh;border-radius:16px;border:1px solid rgba(49,255,120,.3);box-shadow:0 30px 120px #000}
 .lightbox button{position:absolute;right:18px;top:18px;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.2);background:#0b120e;color:#fff;font-size:22px}
 .float-contact{position:fixed;right:18px;bottom:18px;z-index:70;display:flex;flex-direction:column;gap:10px}.float-contact a{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;color:white;font-weight:900;border:1px solid rgba(255,255,255,.15);box-shadow:0 15px 45px rgba(0,0,0,.5);transition:.25s}.float-contact a:hover{transform:scale(1.08) translateY(-3px)}.float-wa{background:linear-gradient(145deg,#1dd96c,#07963c)}.float-tg{background:linear-gradient(145deg,#2c7dff,#174ab0)}
+/* ===== INSTANT ASSISTANT CHAT WIDGET ===== */
+.chat-launcher{position:fixed;right:18px;bottom:88px;z-index:75;width:58px;height:58px;border-radius:50%;border:1px solid rgba(40,255,115,.4);background:linear-gradient(145deg,#16c65b,#0a8f43);display:grid;place-items:center;cursor:pointer;box-shadow:0 18px 45px rgba(0,0,0,.55),0 0 0 0 rgba(40,255,115,.5);transition:.25s;animation:chatPulse 2.6s ease-in-out infinite}
+.chat-launcher:hover{transform:scale(1.07) translateY(-2px)}
+.chat-launcher svg{width:26px;height:26px}
+.chat-launcher .chat-dot{position:absolute;top:-2px;right:-2px;width:14px;height:14px;border-radius:50%;background:#ff4d4d;border:2px solid #030504}
+@keyframes chatPulse{0%,100%{box-shadow:0 18px 45px rgba(0,0,0,.55),0 0 0 0 rgba(40,255,115,.35)}50%{box-shadow:0 18px 45px rgba(0,0,0,.55),0 0 0 10px rgba(40,255,115,0)}}
+.chat-window{position:fixed;right:18px;bottom:156px;z-index:80;width:min(360px,calc(100vw - 36px));max-height:min(560px,calc(100vh - 190px));display:none;flex-direction:column;border-radius:20px;overflow:hidden;border:1px solid rgba(40,255,115,.22);background:linear-gradient(180deg,#0a120d,#050907 60%);box-shadow:0 35px 100px rgba(0,0,0,.6);opacity:0;transform:translateY(14px) scale(.97);transition:opacity .22s ease,transform .22s ease}
+.chat-window.open{display:flex;opacity:1;transform:translateY(0) scale(1)}
+.chat-head{display:flex;align-items:center;gap:11px;padding:15px 16px;border-bottom:1px solid rgba(255,255,255,.06);background:linear-gradient(135deg,rgba(40,255,115,.08),transparent)}
+.chat-avatar{width:36px;height:36px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(145deg,#1d3426,#061008);border:1px solid rgba(40,255,115,.35);font-weight:900;color:#dfffea}
+.chat-head b{display:block;font-size:13px}.chat-head span{display:block;font-size:10px;color:#7ee6a0}
+.chat-head span:before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:#28ff73;margin-right:5px;box-shadow:0 0 8px #28ff73}
+.chat-close-btn{margin-left:auto;background:none;border:none;color:#8a958f;font-size:20px;cursor:pointer;line-height:1;padding:4px}
+.chat-body{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px;min-height:220px}
+.chat-msg{max-width:86%;padding:10px 13px;border-radius:14px;font-size:12.5px;line-height:1.55}
+.chat-msg.bot{align-self:flex-start;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.07);border-bottom-left-radius:4px;color:#e6ece8}
+.chat-msg.user{align-self:flex-end;background:linear-gradient(135deg,#16c65b,#0fb957);color:#031006;border-bottom-right-radius:4px;font-weight:600}
+.chat-typing{align-self:flex-start;display:flex;gap:4px;padding:12px 14px;background:rgba(255,255,255,.06);border-radius:14px;border-bottom-left-radius:4px}
+.chat-typing span{width:6px;height:6px;border-radius:50%;background:#7ee6a0;animation:chatTyping 1.1s infinite}
+.chat-typing span:nth-child(2){animation-delay:.15s}.chat-typing span:nth-child(3){animation-delay:.3s}
+@keyframes chatTyping{0%,60%,100%{opacity:.3;transform:translateY(0)}30%{opacity:1;transform:translateY(-3px)}}
+.chat-quick{display:flex;flex-wrap:wrap;gap:7px;padding:0 16px 12px}
+.chat-quick button{border:1px solid rgba(40,255,115,.3);background:rgba(40,255,115,.06);color:#c9ffd9;font-size:11px;padding:7px 11px;border-radius:999px;cursor:pointer;transition:.2s}
+.chat-quick button:hover{background:rgba(40,255,115,.14);border-color:rgba(40,255,115,.5)}
+.chat-foot{display:flex;gap:8px;padding:12px;border-top:1px solid rgba(255,255,255,.06)}
+.chat-foot input{flex:1;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:11px;padding:10px 12px;color:#fff;font-size:12.5px;outline:none}
+.chat-foot input:focus{border-color:rgba(40,255,115,.4)}
+.chat-foot button{width:40px;height:40px;border-radius:11px;border:none;background:linear-gradient(135deg,#16c65b,#0fb957);color:#031006;font-weight:900;cursor:pointer;display:grid;place-items:center;flex-shrink:0}
+body.simple-mode .chat-window{background:linear-gradient(180deg,#ffffff,#f3f8f5)}
+body.simple-mode .chat-msg.bot{background:rgba(20,70,40,.05);border-color:rgba(20,70,40,.08);color:#25352c}
+body.simple-mode .chat-foot input{background:rgba(20,70,40,.04);border-color:rgba(20,70,40,.1);color:#17211b}
+body.simple-mode .chat-head{border-color:rgba(20,70,40,.08)}
+body.simple-mode .chat-typing{background:rgba(20,70,40,.05)}
+@media(max-width:650px){.chat-launcher{bottom:80px;right:14px;width:52px;height:52px}.chat-window{right:10px;bottom:142px;width:calc(100vw - 20px)}.float-contact{right:14px}}
+/* ===== SCROLL-REVEAL POLISH (v2: blur+scale, more cinematic) ===== */
+.reveal{opacity:0;transform:translateY(34px) scale(.96);filter:blur(6px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1),filter .8s cubic-bezier(.16,1,.3,1)}
+.reveal.in{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;filter:none;transition:none}}
+/* ===== CINEMATIC SCROLL PROGRESS BAR ===== */
+.scroll-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#0fb957,#28ff73,#d7ad43);z-index:200;box-shadow:0 0 12px rgba(40,255,115,.7);transition:width .08s linear}
+/* ===== CUSTOM CURSOR GLOW (desktop only) ===== */
+.cursor-glow{position:fixed;top:0;left:0;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(40,255,115,.09),transparent 68%);pointer-events:none;z-index:5;transform:translate(-50%,-50%);opacity:0;transition:opacity .4s ease;will-change:transform}
+.cursor-glow.active{opacity:1}
+@media(max-width:900px),(hover:none){.cursor-glow{display:none}}
+/* ===== MAGNETIC BUTTONS ===== */
+.btn{transition:transform .18s cubic-bezier(.2,.8,.3,1.4),box-shadow .18s ease,background .18s ease}
+.btn.magnetic-active{will-change:transform}
+/* ===== HERO 3D PARALLAX TILT ===== */
+.hero-card{transition:transform .12s ease-out;transform-style:preserve-3d;will-change:transform}
+@media(max-width:900px){.hero-card{transition:none!important}}
+/* ===== SUBTLE PARALLAX ON PILLAR/PROOF CARDS ===== */
+.pillar,.proof,.video-card{will-change:transform}
+/* ===== 3D PREMIUM ROTATOR BANNER ===== */
+.rotator-section{padding:34px 0 46px;position:relative;overflow:hidden}
+.rotator-head{text-align:center;margin-bottom:26px}
+.rotator-head .kicker{color:var(--green);font-size:11px;letter-spacing:2.5px;font-weight:900}
+.rotator-head h2{font-size:clamp(24px,3.4vw,36px);letter-spacing:-1px;margin:8px 0 6px}
+.rotator-head p{color:var(--muted);font-size:13px}
+.rotator-wrap{width:100%;perspective:1400px;padding:20px 0}
+.rotator-stage{position:relative;height:300px;display:flex;align-items:center;justify-content:center;transform-style:preserve-3d}
+.rotator-ring{position:relative;width:210px;height:260px;transform-style:preserve-3d;animation:rotator-spin 22s linear infinite}
+.rotator-ring:hover{animation-play-state:paused}
+@keyframes rotator-spin{to{transform:rotateY(360deg)}}
+.rotator-card{position:absolute;inset:0;border-radius:20px;overflow:hidden;border:1px solid rgba(40,255,115,.28);background:linear-gradient(150deg,rgba(16,24,19,.95),rgba(4,8,6,.98));box-shadow:0 25px 70px rgba(0,0,0,.5),inset 0 1px rgba(255,255,255,.05);backface-visibility:hidden;transition:border-color .3s,box-shadow .3s}
+.rotator-card:hover{border-color:rgba(40,255,115,.6);box-shadow:0 30px 90px rgba(0,0,0,.6),0 0 40px rgba(40,255,115,.15)}
+.rotator-card img{width:100%;height:100%;object-fit:cover;display:block;opacity:.92}
+.rotator-card .rotator-tag{position:absolute;left:10px;top:10px;font-size:8px;font-weight:1000;letter-spacing:1.2px;padding:6px 9px;border-radius:999px;background:rgba(3,8,5,.82);border:1px solid rgba(40,255,115,.3);color:#8dffb0;text-transform:uppercase;backdrop-filter:blur(4px)}
+.rotator-card .rotator-cap{position:absolute;left:0;right:0;bottom:0;padding:14px 14px 12px;background:linear-gradient(0deg,rgba(2,6,4,.92),transparent);font-size:11px;color:#e6ece8;font-weight:700}
+.rotator-card.icon-card{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:18px;text-align:center}
+.rotator-card.icon-card .r-icon{width:60px;height:60px;border-radius:18px;display:grid;place-items:center;font-size:26px;font-weight:1000;color:#dfffea;background:linear-gradient(145deg,#1d3426,#061008);border:1px solid rgba(40,255,115,.34);box-shadow:7px 7px 16px rgba(0,0,0,.45),inset 3px 3px 8px rgba(255,255,255,.06)}
+.rotator-card.icon-card b{font-size:14px;letter-spacing:.3px}
+.rotator-card.icon-card span{font-size:10.5px;color:#8a958f;line-height:1.5;padding:0 8px}
+.rotator-glow{position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(40,255,115,.10),transparent 65%);pointer-events:none;filter:blur(10px);z-index:-1}
+@media(max-width:900px){.rotator-stage{height:250px}.rotator-ring{width:170px;height:210px}}
+@media(max-width:650px){.rotator-stage{height:220px}.rotator-ring{width:150px;height:185px}.rotator-card.icon-card b{font-size:12px}.rotator-card.icon-card span{font-size:9.5px}}
+@media(prefers-reduced-motion:reduce){.rotator-ring{animation:none}}
+/* ===== PREMIUM ENQUIRY FORM ===== */
+.enquiry-wrap{margin-top:34px;border-radius:22px;border:1px solid rgba(40,255,115,.2);background:linear-gradient(160deg,rgba(10,18,13,.9),rgba(3,7,5,.96));box-shadow:0 30px 90px rgba(0,0,0,.5);padding:clamp(22px,4vw,40px);position:relative;overflow:hidden}
+.enquiry-wrap:before{content:"";position:absolute;inset:-40% -20% auto auto;width:340px;height:340px;background:radial-gradient(circle,rgba(40,255,115,.10),transparent 65%);pointer-events:none}
+.enquiry-head{margin-bottom:22px}
+.enquiry-head .kicker{color:var(--green);font-size:11px;letter-spacing:2px;font-weight:900}
+.enquiry-head h3{font-size:clamp(20px,2.6vw,28px);margin:6px 0 6px}
+.enquiry-head p{color:var(--muted);font-size:12.5px}
+.enquiry-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.enquiry-field{display:flex;flex-direction:column;gap:6px;position:relative}
+.enquiry-field.full{grid-column:1/-1}
+.enquiry-field label{font-size:11px;color:#a7b3ac;font-weight:700;letter-spacing:.3px}
+.enquiry-field input,.enquiry-field textarea{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:13px 14px;color:#fff;font-size:13px;font-family:inherit;outline:none;transition:.2s}
+.enquiry-field input:focus,.enquiry-field textarea:focus{border-color:rgba(40,255,115,.55);background:rgba(40,255,115,.04);box-shadow:0 0 0 3px rgba(40,255,115,.08)}
+.enquiry-field textarea{resize:vertical;min-height:100px}
+.enquiry-field.error input,.enquiry-field.error textarea{border-color:rgba(255,80,80,.6);background:rgba(255,80,80,.05)}
+.enquiry-field .err-msg{font-size:10.5px;color:#ff8a8a;min-height:13px}
+.enquiry-captcha{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:12px 14px}
+.enquiry-captcha b{color:#8dffb0;font-size:15px;font-weight:900;letter-spacing:1px;white-space:nowrap}
+.enquiry-captcha input{flex:1;min-width:0}
+.enquiry-hp{position:absolute;left:-9999px;opacity:0;pointer-events:none}
+.enquiry-submit{margin-top:22px;width:100%;border:none;border-radius:13px;padding:16px;font-size:14px;font-weight:900;letter-spacing:.4px;color:#031006;background:linear-gradient(135deg,#28ff73,#0fb957);cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:.2s;box-shadow:0 18px 45px rgba(15,185,87,.28)}
+.enquiry-submit:hover{transform:translateY(-2px);box-shadow:0 22px 55px rgba(15,185,87,.4)}
+.enquiry-submit:disabled{opacity:.7;cursor:not-allowed;transform:none}
+.enquiry-spinner{width:16px;height:16px;border-radius:50%;border:2.5px solid rgba(3,16,6,.25);border-top-color:#031006;animation:enq-spin .7s linear infinite;display:none}
+.enquiry-submit.loading .enquiry-spinner{display:inline-block}
+.enquiry-submit.loading .enquiry-submit-label{opacity:.85}
+@keyframes enq-spin{to{transform:rotate(360deg)}}
+.enquiry-success{display:none;flex-direction:column;align-items:center;text-align:center;gap:14px;padding:30px 10px}
+.enquiry-success.show{display:flex;animation:enq-pop .5s cubic-bezier(.2,.9,.3,1.4)}
+@keyframes enq-pop{from{opacity:0;transform:scale(.85)}to{opacity:1;transform:scale(1)}}
+.enquiry-check{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#28ff73,#0fb957);display:grid;place-items:center;box-shadow:0 0 0 8px rgba(40,255,115,.12)}
+.enquiry-check svg{width:30px;height:30px}
+.enquiry-success h4{font-size:18px}
+.enquiry-success p{color:var(--muted);font-size:12.5px;max-width:340px}
+.enquiry-success .btn{margin-top:6px}
+.enquiry-form.hide{display:none}
+@media(max-width:650px){.enquiry-grid{grid-template-columns:1fr}}
+body.simple-mode .enquiry-wrap{background:linear-gradient(160deg,#ffffff,#f2f8f5);border-color:rgba(20,130,60,.18)}
+body.simple-mode .enquiry-field input,body.simple-mode .enquiry-field textarea{background:rgba(20,70,40,.03);border-color:rgba(20,70,40,.12);color:#17211b}
+body.simple-mode .enquiry-field label{color:#4c5a52}
+body.simple-mode .enquiry-captcha{background:rgba(20,70,40,.03);border-color:rgba(20,70,40,.1)}
+/* ===== EDITORIAL SECTION NUMBERING (premium touch) ===== */
+.section-head{position:relative}
+.sec-num{display:block;font-size:11px;font-weight:900;letter-spacing:2px;color:transparent;-webkit-text-stroke:1px rgba(215,173,67,.55);margin-bottom:10px}
+body.simple-mode .sec-num{-webkit-text-stroke:1px rgba(20,130,60,.4)}
+@media(max-width:650px){.sec-num{font-size:10px}}
 @media(max-width:650px){.hero-card:after{inset:10% -3% 2%;transform:translateZ(-20px) rotateX(65deg)}.float-contact a{width:47px;height:47px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition:none!important}}
 /* Premium 3D social +  bot layer */
@@ -161,24 +297,8 @@ main,footer,nav{position:relative}
 <style>.simple-preload body{background:#f4f7f5!important}.simple-preload #market3d{opacity:.10!important}</style>
 </head>
 <body>
-
-<!-- VIP ONE-MONTH PREMIUM COURSE OFFER -->
-<div class="vip-offer" id="vipOffer" role="dialog" aria-modal="true" aria-labelledby="vipOfferTitle">
-  <div class="vip-backdrop" data-close-vip></div>
-  <div class="vip-modal">
-    <button class="vip-close" id="vipClose" aria-label="Close offer">×</button>
-    <div class="vip-badge"><span>✦</span> LIMITED VIP OFFER <span>✦</span></div>
-    <div class="vip-crown">♛</div>
-    <div class="vip-kicker">TRADE WITH MUZAMIL PRESENTS</div>
-    <h2 id="vipOfferTitle">PREMIUM COURSE<br><strong>FREE FOR 1 MONTH</strong></h2>
-    <p class="vip-lead">Get access to premium trading education for one full month — absolutely free.</p>
-    <div class="vip-perks">
-      <span>✓ Premium Lessons</span><span>✓ Structured Learning</span><span>✓ Trading Concepts</span><span>✓ Risk Management</span>
-    </div>
-    <a class="vip-cta" href="https://wa.me/923313166573" target="_blank" rel="noopener">CLAIM YOUR VIP ACCESS <span>→</span></a>
-    <small>Limited-time promotional offer. Trading involves risk. No profits are guaranteed.</small>
-  </div>
-</div>
+<div class="scroll-progress" id="scrollProgress"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
 <canvas id="market3d" aria-hidden="true"></canvas><div class="holo" aria-hidden="true"><i></i><i></i><i></i></div><div class="scanline" aria-hidden="true"></div>
 <div class="bg-grid"></div><div class="noise"></div>
 <div class="candles" aria-hidden="true">
@@ -196,8 +316,8 @@ main,footer,nav{position:relative}
   <i class="candle up" style="left:86%;top:58%;height:175px"></i><i class="candle down" style="left:94%;top:66%;height:125px"></i>
 </div>
 <nav><div class="container navin">
-  <a class="logo" href="#home"><span class="logo-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#28ff73" stroke-width="1.8"><path d="M5 18V7m0 0h3m-3 0 1.5-2M12 20V5m0 0h3m-3 0 1.5-2M19 17V3m0 0h3m-3 0 1.5-2"/><rect x="3.5" y="9" width="3" height="5"/><rect x="10.5" y="8" width="3" height="7"/><rect x="17.5" y="7" width="3" height="6"/></svg></span>TRADE WITH <span>MUZAMIL</span></a>
-  <div class="links"><a href="#home">Home</a><a href="#about">About</a><a href="#courses">Learn</a><a href="#insights">Insights</a><a href="#tools">Tools</a><a href="#bot-pro">Automation</a><a href="#proofs">Results</a><a href="#contact">Contact</a></div>
+  <a class="logo" href="#home"><span class="logo-icon"><svg viewBox="0 0 40 40" width="24" height="24"><path d="M20 6 23 12 29 9 27 17 31 17.5 26 23 20 21 14 23 9 17.5 13 17 11 9 17 12 20 6Z" fill="#d7ad43" stroke="#f4d97a" stroke-width=".6"/><rect x="12" y="25" width="4" height="8" rx="1" fill="#0fb957"/><rect x="18" y="21" width="4" height="12" rx="1" fill="#28ff73"/><rect x="24" y="27" width="4" height="6" rx="1" fill="#0fb957"/></svg></span><span class="logo-text"><em>TRADE WITH</em><b>MUZAMIL</b></span></a>
+  <div class="links"><a href="#home">Home</a><a href="#about">About</a><a href="#courses">Learn</a><a href="#tools">Tools</a><a href="#bot-pro">Automation</a><a href="#proofs">Results</a><a href="#contact">Contact</a></div>
   <div class="nav-actions"><button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme" aria-pressed="false"><span class="theme-icon">☀</span><span class="theme-label">LIGHT</span></button><a class="btn btn-green" href="https://wa.me/923313166573" target="_blank">WhatsApp</a><a class="btn btn-blue" href="https://t.me/Muzamilali110" target="_blank">Telegram</a></div>
   <button class="theme-toggle theme-toggle-mobile" id="themeToggleMobile" type="button" aria-label="Switch theme" aria-pressed="false"><span class="theme-icon">☀</span><span class="theme-label">LIGHT</span></button>
   <button class="mobile-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
@@ -211,13 +331,34 @@ main,footer,nav{position:relative}
   </div>
 </div>
 <main>
-<section class="vip-thumbnail container" id="vip-banner" aria-label="VIP premium course offer">
-  <button class="vip-thumb-card" id="vipThumb" type="button">
+<section class="rotator-section container" aria-label="Trading services showcase">
+  <div class="rotator-head">
+    <div class="kicker">WHAT WE OFFER</div>
+    <h2>Education. Signals. Automation.</h2>
+    <p>A quick look at everything Trade With Muzamil brings to the table.</p>
+  </div>
+  <div class="rotator-wrap">
+    <div class="rotator-stage">
+      <div class="rotator-glow"></div>
+      <div class="rotator-ring" id="rotatorRing">
+        <a class="rotator-card icon-card" href="#bot-pro"><div class="r-icon">◈</div><b>Auto Bot</b><span>Systematic, risk-aware automation</span></a>
+        <a class="rotator-card" href="#proofs"><img src="assets/proof-08-tradingview-gold-bullish.jpg" alt="Gold bullish TradingView setup" loading="lazy"><span class="rotator-tag">Live Analysis</span><span class="rotator-cap">Gold — Bullish Setup</span></a>
+        <a class="rotator-card icon-card" href="#courses"><div class="r-icon">▤</div><b>Free Courses</b><span>Basics to advanced, structured</span></a>
+        <a class="rotator-card" href="#about"><img src="assets/muzamil-portrait.png" alt="Muzamil Ali — Trade With Muzamil" loading="lazy"><span class="rotator-tag">Mentor</span><span class="rotator-cap">Muzamil Ali</span></a>
+        <a class="rotator-card icon-card" href="#courses"><div class="r-icon">◎</div><b>Daily Signals</b><span>Entry, TP, SL & market context</span></a>
+        <a class="rotator-card" href="#proofs"><img src="assets/proof-09-tradingview-gold-bearish.jpg" alt="Gold bearish TradingView setup" loading="lazy"><span class="rotator-tag">Live Analysis</span><span class="rotator-cap">Gold — Bearish Setup</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="vip-thumbnail container" id="vip-banner" aria-label="Premium course offer">
+  <a class="vip-thumb-card" href="https://wa.me/923313166573?text=Assalam-o-Alaikum%2C%20I%20want%20details%20about%20the%20Premium%20Course." target="_blank" rel="noopener">
     <span class="vip-thumb-glow"></span>
-    <span class="vip-thumb-left"><span class="vip-thumb-badge">✦ VIP LIMITED OFFER</span><strong>PREMIUM COURSE</strong><em>1 MONTH FREE</em></span>
-    <span class="vip-thumb-center"><span>Exclusive access to premium trading education</span><small>Limited promotional offer • No guaranteed returns</small></span>
-    <span class="vip-thumb-cta">CLAIM OFFER <b>→</b></span>
-  </button>
+    <span class="vip-thumb-left"><span class="vip-thumb-badge">Premium Course</span><strong>Free for 1 Month</strong></span>
+    <span class="vip-thumb-center"><span>Structured trading education, on us</span><small>Promotional offer • No guaranteed returns</small></span>
+    <span class="vip-thumb-cta">Get Details <b>→</b></span>
+  </a>
 </section>
 
 <section class="hero container" id="home">
@@ -233,7 +374,7 @@ main,footer,nav{position:relative}
     <div class="micro"><span>✓ Learn</span><span>• Analyze</span><span>• Execute</span><span>• Grow</span></div>
   </div>
   <div class="hero-card">
-    <img class="portrait" src="/muzamil-portrait.png" alt="Muzamil Ali — Trade With Muzamil">
+    <img class="portrait" src="assets/muzamil-portrait.png" alt="Muzamil Ali — Trade With Muzamil">
     <div class="trust"><div class="crown">♛</div><div><b>TRADE WITH MUZAMIL</b><small>Your Partner in Trading Success</small></div></div>
   </div>
 </section>
@@ -241,7 +382,7 @@ main,footer,nav{position:relative}
 <div class="about-vip-profile">
   <div class="about-vip-photo">
     <div class="photo-ring"></div>
-    <img src="/muzamil-portrait.png" alt="Muzamil — Trade With Muzamil">
+    <img src="assets/muzamil-portrait.png" alt="Muzamil — Trade With Muzamil">
     <span class="verified-chip">✓ VERIFIED PROFILE</span>
   </div>
   <div class="about-vip-copy">
@@ -258,7 +399,7 @@ main,footer,nav{position:relative}
   </div>
 </div>
 <div class="container">
-  <div class="section-head"><div class="kicker">WHO IS BEHIND THE BRAND</div><h2>ABOUT MUZAMIL ALI</h2><p>Trader • Educator • Analyst — focused on practical market education, disciplined execution and smarter trading tools.</p></div>
+  <div class="section-head"><span class="sec-num">01</span><div class="kicker">WHO IS BEHIND THE BRAND</div><h2>ABOUT MUZAMIL ALI</h2><p>Trader • Educator • Analyst — focused on practical market education, disciplined execution and smarter trading tools.</p></div>
   <div class="about">
     <div class="about-copy"><div class="role">TRADER • EDUCATOR • ANALYST</div><h3>Learn the market.<br><span>Build your edge.</span></h3><p>Trade With Muzamil is built around a simple mission: make useful trading education and market resources accessible to traders who want to improve their process.</p><p>Explore free learning resources, daily market ideas and automated trading support — with risk awareness and disciplined execution at the center.</p></div>
     <div class="pillars">
@@ -270,45 +411,9 @@ main,footer,nav{position:relative}
   </div>
 </div></section>
 
-
-<section id="insights" class="insights-section">
-  <div class="container">
-    <div class="section-head">
-      <div class="kicker">MARKET DESK</div>
-      <h2>MARKET INSIGHTS</h2>
-      <p>A clean space for your future market notes, chart breakdowns and daily bias. Connect a live market API later without redesigning the interface.</p>
-    </div>
-    <div class="insight-grid">
-      <article class="insight-card">
-        <div class="insight-top"><span class="asset-dot crypto"></span><b>BTC / USDT</b><span class="status">WATCHLIST</span></div>
-        <div class="insight-value">Bitcoin</div>
-        <p>Use this card for your latest technical view, key levels and invalidation point.</p>
-        <div class="levels"><span>Support <b>—</b></span><span>Resistance <b>—</b></span></div>
-      </article>
-      <article class="insight-card">
-        <div class="insight-top"><span class="asset-dot gold"></span><b>XAU / USD</b><span class="status">WATCHLIST</span></div>
-        <div class="insight-value">Gold</div>
-        <p>Publish a concise market thesis here instead of overwhelming visitors with raw charts.</p>
-        <div class="levels"><span>Support <b>—</b></span><span>Resistance <b>—</b></span></div>
-      </article>
-      <article class="insight-card">
-        <div class="insight-top"><span class="asset-dot forex"></span><b>EUR / USD</b><span class="status">WATCHLIST</span></div>
-        <div class="insight-value">Forex</div>
-        <p>Perfect for a future daily bias, setup summary and risk-aware trade plan.</p>
-        <div class="levels"><span>Support <b>—</b></span><span>Resistance <b>—</b></span></div>
-      </article>
-    </div>
-    <div class="insight-banner">
-      <div><span class="live-pulse"></span><b>Live market feed ready for integration</b><p>When you connect a trusted data source, these cards can show live prices, change and market status.</p></div>
-      <a class="btn btn-green" href="#contact">Request Analysis</a>
-    </div>
-  </div>
-</section>
-
 <section id="tools" class="tools-section">
   <div class="container">
-    <div class="section-head">
-      <div class="kicker">TRADER TOOLKIT</div>
+    <div class="section-head"><span class="sec-num">02</span><div class="kicker">TRADER TOOLKIT</div>
       <h2>TOOLS FOR BETTER DECISIONS</h2>
       <p>Simple calculators for planning trades. These tools are for mathematical planning only and do not predict market outcomes.</p>
     </div>
@@ -342,8 +447,7 @@ main,footer,nav{position:relative}
 
 <section class="roadmap-section" id="roadmap">
   <div class="container">
-    <div class="section-head">
-      <div class="kicker">LEARNING PATH</div>
+    <div class="section-head"><span class="sec-num">03</span><div class="kicker">LEARNING PATH</div>
       <h2>YOUR TRADING ROADMAP</h2>
       <p>A structured path makes the website feel like a real learning platform rather than a collection of links.</p>
     </div>
@@ -363,8 +467,7 @@ main,footer,nav{position:relative}
 
 <section class="faq-section" id="faq">
   <div class="container">
-    <div class="section-head">
-      <div class="kicker">QUICK ANSWERS</div>
+    <div class="section-head"><span class="sec-num">04</span><div class="kicker">QUICK ANSWERS</div>
       <h2>FREQUENTLY ASKED QUESTIONS</h2>
       <p>Clear answers help visitors understand exactly what Trade With Muzamil provides.</p>
     </div>
@@ -378,7 +481,7 @@ main,footer,nav{position:relative}
 </section>
 
 <section id="bot-pro"><div class="container">
-  <div class="section-head"><div class="kicker">SMART AUTOMATION</div><h2>PROFESSIONAL BOT</h2><p>Smart automation support with a premium smart interface. Start the bot setup directly with Trade With Muzamil.</p></div>
+  <div class="section-head"><span class="sec-num">05</span><div class="kicker">SMART AUTOMATION</div><h2>PROFESSIONAL BOT</h2><p>Smart automation support with a premium smart interface. Start the bot setup directly with Trade With Muzamil.</p></div>
   <div class="bot-pro">
     <div class="bot-pro-copy"><div class="bot-chip"><span class="dot"></span> LIVE BOT SYSTEM</div><h3>TRADE SMARTER WITH <span>AUTOMATION</span></h3><p>Designed for systematic execution, market monitoring and risk-aware automation. No profit is guaranteed and trading always involves risk.</p><div class="start-bot"><a class="btn btn-gold" href="https://wa.me/923313166573?text=Assalam-o-Alaikum%2C%20I%20want%20to%20start%20the%20%20Bot%20setup." target="_blank">⚡ START NOW</a></div></div>
     <div class="bot-stage"><div class="bot-orb"><div class="bot-face"></div><div class="bot-status">READY TO START</div></div></div>
@@ -386,7 +489,7 @@ main,footer,nav{position:relative}
 </div></section>
 
 <section class="social-section" id="social"><div class="container">
-  <div class="section-head"><div class="kicker">STAY CONNECTED</div><h2>CONNECT WITH MUZAMIL</h2><p>Use the official contact channels below for courses, market content, signals and automation support.</p></div>
+  <div class="section-head"><span class="sec-num">06</span><div class="kicker">STAY CONNECTED</div><h2>CONNECT WITH MUZAMIL</h2><p>Use the official contact channels below for courses, market content, signals and automation support.</p></div>
   <div class="social-grid social-grid-2">
     <a class="social-card wa" href="https://wa.me/923313166573" target="_blank" rel="noopener">
       <div class="social-3d icon-wa" aria-hidden="true">WA</div><b>WhatsApp</b><span>Direct support • 0331 3166573</span><em>Message now →</em>
@@ -397,23 +500,23 @@ main,footer,nav{position:relative}
   </div>
 </div></section>
 <section id="proofs"><div class="container">
-  <div class="section-head"><div class="kicker">TRANSPARENCY IS OUR STRENGTH</div><h2>RESULTS</h2><p>Selected trading screenshots, TradingView analyses and account results shared for educational transparency. Past performance does not guarantee future results.</p></div>
+  <div class="section-head"><span class="sec-num">07</span><div class="kicker">TRANSPARENCY IS OUR STRENGTH</div><h2>RESULTS</h2><p>Selected trading screenshots, TradingView analyses and account results shared for educational transparency. Past performance does not guarantee future results.</p></div>
   <div class="proof-feature-label"><span>TRADINGVIEW ANALYSIS</span><b>Recent Gold Market Setups</b><small>Real chart screenshots supplied by Trade With Muzamil.</small></div>
   <div class="proofs screenshot-grid">
-    <article class="proof"><img src="/proof-01.jpg" alt="Trading result proof 1" loading="lazy"><div class="cap">Trading result screenshot</div></article>
-    <article class="proof"><img src="/proof-02.jpg" alt="Trading result proof 2" loading="lazy"><div class="cap">Trading result screenshot</div></article>
-    <article class="proof"><img src="/proof-03.jpg" alt="Trading result proof 3" loading="lazy"><div class="cap">Trading result screenshot</div></article>
-    <article class="proof"><img src="/proof-04.jpg" alt="Trading result proof 4" loading="lazy"><div class="cap">Trading result screenshot</div></article>
-    <article class="proof"><img src="/proof-05.jpg" alt="Trading result proof 5" loading="lazy"><div class="cap">Trading result screenshot</div></article>
-    <article class="proof"><img src="/proof-06.jpg" alt="Trading result proof 6" loading="lazy"><div class="cap">Trading result screenshot</div></article>
-    <article class="proof"><img src="/proof-07.jpg" alt="Trading result proof 7" loading="lazy"><div class="cap">Trading result screenshot</div></article>
-    <article class="proof"><img src="/proof-08-tradingview-gold-bullish.jpg" alt="TradingView Gold analysis showing bullish setup" loading="lazy"><div class="cap">TradingView • Gold bullish setup</div></article>
-    <article class="proof"><img src="/proof-09-tradingview-gold-bearish.jpg" alt="TradingView Gold analysis showing bearish setup" loading="lazy"><div class="cap">TradingView • Gold bearish setup</div></article>
+    <article class="proof"><img src="assets/proof-01.jpg" alt="Trading result proof 1" loading="lazy"><div class="cap">Trading result screenshot</div></article>
+    <article class="proof"><img src="assets/proof-02.jpg" alt="Trading result proof 2" loading="lazy"><div class="cap">Trading result screenshot</div></article>
+    <article class="proof"><img src="assets/proof-03.jpg" alt="Trading result proof 3" loading="lazy"><div class="cap">Trading result screenshot</div></article>
+    <article class="proof"><img src="assets/proof-04.jpg" alt="Trading result proof 4" loading="lazy"><div class="cap">Trading result screenshot</div></article>
+    <article class="proof"><img src="assets/proof-05.jpg" alt="Trading result proof 5" loading="lazy"><div class="cap">Trading result screenshot</div></article>
+    <article class="proof"><img src="assets/proof-06.jpg" alt="Trading result proof 6" loading="lazy"><div class="cap">Trading result screenshot</div></article>
+    <article class="proof"><img src="assets/proof-07.jpg" alt="Trading result proof 7" loading="lazy"><div class="cap">Trading result screenshot</div></article>
+    <article class="proof"><img src="assets/proof-08-tradingview-gold-bullish.jpg" alt="TradingView Gold analysis showing bullish setup" loading="lazy"><div class="cap">TradingView • Gold bullish setup</div></article>
+    <article class="proof"><img src="assets/proof-09-tradingview-gold-bearish.jpg" alt="TradingView Gold analysis showing bearish setup" loading="lazy"><div class="cap">TradingView • Gold bearish setup</div></article>
   </div>
 </div></section>
 <div class="profit-offer-separator" aria-hidden="true"><span></span><b>EXCLUSIVE OFFER</b><span></span></div>
 <section id="courses"><div class="container">
-  <div class="section-head"><div class="kicker">WHAT WE OFFER</div><h2>BUILT FOR THE MODERN TRADER</h2><p>Three ways to connect with Trade With Muzamil. Courses and daily signals are free; bot activation is available for eligible traders.</p></div>
+  <div class="section-head"><span class="sec-num">08</span><div class="kicker">WHAT WE OFFER</div><h2>BUILT FOR THE MODERN TRADER</h2><p>Three ways to connect with Trade With Muzamil. Courses and daily signals are free; bot activation is available for eligible traders.</p></div>
   <div class="offers">
     <article class="offer"><span class="tag">01</span><h3>FREE TRADING COURSES</h3><div class="sub">From Basic to Advanced — 100% Free</div><ul class="checklist"><li>Trading Basics</li><li>Technical Analysis</li><li>Price Action</li><li>Market Structure</li><li>Risk Management</li><li>Trading Psychology</li><li>Entry & Exit Planning</li><li>Advanced Concepts</li></ul><a class="btn btn-green" href="https://wa.me/923313166573?text=Assalam-o-Alaikum%2C%20I%20want%20the%20free%20trading%20courses." target="_blank">Get Free Courses on WhatsApp</a></article>
     <article class="offer blue" id="signals"><span class="tag">02</span><h3>FREE DAILY SIGNALS</h3><div class="sub">Daily Market Ideas — 100% Free</div><ul class="checklist"><li>Entry Price</li><li>Take Profit (TP)</li><li>Stop Loss (SL)</li><li>Market Context</li><li>Trade Setup Explanation</li><li>Risk Awareness</li></ul><a class="btn btn-blue" href="https://wa.me/923313166573?text=Assalam-o-Alaikum%2C%20I%20want%20the%20free%20daily%20signals." target="_blank">Get Daily Signals on WhatsApp</a></article>
@@ -421,24 +524,102 @@ main,footer,nav{position:relative}
   </div>
 </div></section>
 <section id="live-videos" class="video-section"><div class="container">
-  <div class="section-head"><div class="kicker">LIVE TRADING MEDIA</div><h2>LIVE TRADING VIDEOS</h2><p>Watch the uploaded trading clips below. Tap play to view each video.</p></div>
+  <div class="section-head"><span class="sec-num">09</span><div class="kicker">LIVE TRADING MEDIA</div><h2>LIVE TRADING VIDEOS</h2><p>Watch the uploaded trading clips below. Tap play to view each video.</p></div>
   <div class="video-grid">
-    <article class="video-card"><video controls playsinline preload="metadata" poster="/proof-01.jpg"><source src="/live-trading-01.mp4" type="video/mp4">Your browser does not support video playback.</video><div class="video-meta"><b>Live Trading Video 01</b><span>Trading proof</span></div></article>
-    <article class="video-card"><video controls playsinline preload="metadata" poster="/proof-02.jpg"><source src="/live-trading-02.mp4" type="video/mp4">Your browser does not support video playback.</video><div class="video-meta"><b>Live Trading Video 02</b><span>Trading proof</span></div></article>
-    <article class="video-card"><video controls playsinline preload="metadata" poster="/proof-03.jpg"><source src="/live-trading-03.mp4" type="video/mp4">Your browser does not support video playback.</video><div class="video-meta"><b>Live Trading Video 03</b><span>Trading proof</span></div></article>
+    <article class="video-card"><video controls playsinline preload="metadata" poster="assets/proof-01.jpg"><source src="assets/live-trading-01.mp4" type="video/mp4">Your browser does not support video playback.</video><div class="video-meta"><b>Live Trading Video 01</b><span>Trading proof</span></div></article>
+    <article class="video-card"><video controls playsinline preload="metadata" poster="assets/proof-02.jpg"><source src="assets/live-trading-02.mp4" type="video/mp4">Your browser does not support video playback.</video><div class="video-meta"><b>Live Trading Video 02</b><span>Trading proof</span></div></article>
+    <article class="video-card"><video controls playsinline preload="metadata" poster="assets/proof-03.jpg"><source src="assets/live-trading-03.mp4" type="video/mp4">Your browser does not support video playback.</video><div class="video-meta"><b>Live Trading Video 03</b><span>Trading proof</span></div></article>
   </div>
   <div class="video-note">Videos are provided as proof/media content. Trading involves risk and no result is guaranteed.</div>
 </div></section>
 <section id="contact" class="contact"><div class="container">
-  <div class="section-head"><div class="kicker">READY TO CONNECT?</div><h2>LET’S GROW TOGETHER</h2><p>Get the free course, daily signals or ask for Auto Bot setup details directly.</p></div>
+  <div class="section-head"><span class="sec-num">10</span><div class="kicker">READY TO CONNECT?</div><h2>LET’S GROW TOGETHER</h2><p>Get the free course, daily signals or ask for Auto Bot setup details directly.</p></div>
   <div class="contact-grid">
     <div class="contact-card"><h3>Trade With Muzamil</h3><p>Learn smarter. Analyze better. Execute with discipline.</p><div class="ctas"><a class="btn btn-green" href="https://wa.me/923313166573" target="_blank">Start on WhatsApp</a><a class="btn btn-blue" href="https://t.me/Muzamilali110" target="_blank">Join Telegram</a></div></div>
     <div class="contact-card whatsapp"><div class="kicker">WHATSAPP</div><strong>0331 3166573</strong><p>Chat directly for courses, signals and bot setup.</p><a class="btn btn-green" href="https://wa.me/923313166573" target="_blank">Message Now</a></div>
     <div class="contact-card telegram"><div class="kicker">TELEGRAM</div><strong>@Muzamilali110</strong><p>Join the Telegram community and stay connected.</p><a class="btn btn-blue" href="https://t.me/Muzamilali110" target="_blank">Open Telegram</a></div>
   </div>
+
+  <div class="enquiry-wrap">
+    <div class="enquiry-head">
+      <div class="kicker">BUSINESS ENQUIRY</div>
+      <h3>Send a Direct Enquiry</h3>
+      <p>Prefer not to use WhatsApp right now? Fill this out and it lands straight in our inbox.</p>
+    </div>
+    <form id="enquiryForm" class="enquiry-form" autocomplete="off">
+      <input type="text" name="botcheck" class="enquiry-hp" tabindex="-1" autocomplete="off">
+      <div class="enquiry-grid">
+        <div class="enquiry-field" data-field="name">
+          <label for="eqName">Full Name</label>
+          <input type="text" id="eqName" name="name" placeholder="Your full name">
+          <span class="err-msg"></span>
+        </div>
+        <div class="enquiry-field" data-field="email">
+          <label for="eqEmail">Email</label>
+          <input type="email" id="eqEmail" name="email" placeholder="you@gmail.com">
+          <span class="err-msg"></span>
+        </div>
+        <div class="enquiry-field" data-field="whatsapp">
+          <label for="eqWa">WhatsApp Number</label>
+          <input type="tel" id="eqWa" name="whatsapp" placeholder="03XX XXXXXXX">
+          <span class="err-msg"></span>
+        </div>
+        <div class="enquiry-field" data-field="subject">
+          <label for="eqSubject">Subject</label>
+          <input type="text" id="eqSubject" name="subject" placeholder="What's this about?">
+          <span class="err-msg"></span>
+        </div>
+        <div class="enquiry-field full" data-field="message">
+          <label for="eqMessage">Message</label>
+          <textarea id="eqMessage" name="message" placeholder="Tell us a bit more..."></textarea>
+          <span class="err-msg"></span>
+        </div>
+        <div class="enquiry-field full" data-field="captcha">
+          <label>Quick Check</label>
+          <div class="enquiry-captcha">
+            <b id="captchaQ">? + ? =</b>
+            <input type="text" id="eqCaptcha" inputmode="numeric" placeholder="Your answer">
+          </div>
+          <span class="err-msg"></span>
+        </div>
+      </div>
+      <button type="submit" class="enquiry-submit" id="enquirySubmitBtn">
+        <span class="enquiry-spinner"></span>
+        <span class="enquiry-submit-label">Send Enquiry</span>
+      </button>
+    </form>
+    <div class="enquiry-success" id="enquirySuccess">
+      <div class="enquiry-check"><svg viewBox="0 0 24 24" fill="none" stroke="#031006" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+      <h4>Enquiry Sent!</h4>
+      <p>Thanks for reaching out — we've received your message and will get back to you soon. For a faster reply, feel free to also message us on WhatsApp.</p>
+      <a class="btn btn-green" href="https://wa.me/923313166573" target="_blank">Message on WhatsApp</a>
+    </div>
+  </div>
 </div></section>
 </main>
-<div class="float-contact"><a class="float-wa" href="https://wa.me/923313166573" target="_blank" aria-label="WhatsApp">WA</a><a class="float-tg" href="https://t.me/Muzamilali110" target="_blank" aria-label="Telegram">TG</a></div><footer><div class="container footer-in"><div>© 2026 TRADE WITH MUZAMIL. All rights reserved.</div><div class="disclaimer"><b>RISK DISCLAIMER:</b> Trading financial markets involves substantial risk and may not be suitable for every investor. Educational content, market ideas, screenshots and examples are for informational/educational purposes only and are not financial advice. No profit or return is guaranteed.</div></div></footer>
+<div class="float-contact"><a class="float-wa" href="https://wa.me/923313166573" target="_blank" aria-label="WhatsApp">WA</a><a class="float-tg" href="https://t.me/Muzamilali110" target="_blank" aria-label="Telegram">TG</a></div>
+
+<!-- INSTANT ASSISTANT CHAT WIDGET -->
+<button class="chat-launcher" id="chatLauncher" aria-label="Chat with us" type="button">
+  <svg viewBox="0 0 24 24" fill="none" stroke="#031006" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+  <span class="chat-dot" id="chatDot"></span>
+</button>
+
+<div class="chat-window" id="chatWindow" role="dialog" aria-label="Instant assistant chat">
+  <div class="chat-head">
+    <div class="chat-avatar">♛</div>
+    <div><b>Trade With Muzamil</b><span>Instant Assistant</span></div>
+    <button class="chat-close-btn" id="chatCloseBtn" aria-label="Close chat">×</button>
+  </div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="chat-quick" id="chatQuick"></div>
+  <div class="chat-foot">
+    <input type="text" id="chatInput" placeholder="Type your question..." autocomplete="off">
+    <button id="chatSendBtn" aria-label="Send">➤</button>
+  </div>
+</div>
+
+<footer><div class="container footer-in"><div>© 2026 TRADE WITH MUZAMIL. All rights reserved.</div><div class="disclaimer"><b>RISK DISCLAIMER:</b> Trading financial markets involves substantial risk and may not be suitable for every investor. Educational content, market ideas, screenshots and examples are for informational/educational purposes only and are not financial advice. No profit or return is guaranteed.</div></div></footer>
 <script>
 (()=>{
  const c=document.getElementById('market3d'),ctx=c.getContext('2d');
@@ -680,21 +861,6 @@ body.simple-mode .about-vip-profile{background:linear-gradient(145deg,rgba(20,18
 </style>
 
 
-<script>
-(function(){
-  const modal=document.getElementById('vipOffer');
-  const close=document.getElementById('vipClose');
-  if(!modal) return;
-  function hide(){modal.classList.add('hidden');document.body.classList.remove('vip-open');try{sessionStorage.setItem('twmVipClosed','1')}catch(e){}}
-  // Opening offer is intentionally shown on each new browser session.
-  try{if(sessionStorage.getItem('twmVipClosed')==='1') hide()}catch(e){}
-  close?.addEventListener('click',hide);
-  modal.querySelectorAll('[data-close-vip]').forEach(x=>x.addEventListener('click',hide));
-  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!modal.classList.contains('hidden'))hide()});
-})();
-</script>
-
-
 <style>
 .proof-feature-label{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin:0 0 15px;padding:13px 15px;border-left:2px solid var(--green);border-radius:0 12px 12px 0;background:linear-gradient(90deg,rgba(40,255,115,.06),transparent);border-top:1px solid rgba(255,255,255,.04);border-bottom:1px solid rgba(255,255,255,.04)}
 .proof-feature-label span{font-size:8px;letter-spacing:1.4px;color:var(--green);font-weight:1000}.proof-feature-label b{font-size:13px}.proof-feature-label small{font-size:9px;color:#718078}
@@ -713,10 +879,10 @@ body.simple-mode .vip-thumb-card{background:linear-gradient(105deg,rgba(215,173,
 @media(max-width:500px){.vip-thumbnail{margin-top:10px}.vip-thumb-card{min-height:96px}.vip-thumb-badge{font-size:7px}.vip-thumb-cta{padding:11px 10px}.profit-offer-separator{padding:0 5px;gap:9px}.profit-offer-separator b{font-size:7px}}
 </style>
 <script>
-(function(){const b=document.getElementById('vipThumb');const m=document.getElementById('vipOffer');if(!b||!m)return;b.addEventListener('click',()=>{m.classList.remove('hidden');});})();
+
 </script>
 
-</body></html><style>
+<style>
 /* FINAL PREMIUM LIVE CANDLE BACKGROUND FIX */
 html{background:#020806;min-height:100%;}
 body{background:transparent!important;position:relative;min-height:100%;}
@@ -904,3 +1070,372 @@ body.simple-mode .float-contact a{filter:saturate(1.05)!important}
   body.simple-mode .pillar,body.simple-mode .offer,body.simple-mode .proof,body.simple-mode .contact-card,body.simple-mode .video-card,body.simple-mode .social-card,body.simple-mode .bot-pro{backdrop-filter:blur(8px)!important}
 }
 </style>
+
+<script>
+/* ===== 3D PREMIUM ROTATOR BANNER ===== */
+(function(){
+  const ring=document.getElementById('rotatorRing');
+  const stage=ring ? ring.closest('.rotator-stage') : null;
+  if(!ring || !stage) return;
+  const cards=ring.querySelectorAll('.rotator-card');
+  const count=cards.length;
+
+  function layout(){
+    const ringWidth=ring.getBoundingClientRect().width || 210;
+    const angleStep=360/count;
+    const radius=Math.round((ringWidth/2)/Math.tan(Math.PI/count)*1.28);
+    cards.forEach((card,i)=>{
+      const angle=i*angleStep;
+      card.style.transform=`rotateY(${angle}deg) translateZ(${radius}px)`;
+    });
+  }
+  layout();
+  window.addEventListener('resize',()=>{
+    clearTimeout(window.__rotatorResizeT);
+    window.__rotatorResizeT=setTimeout(layout,150);
+  });
+
+  // Subtle 3D tilt on scroll for a premium parallax feel
+  const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduceMotion){
+    let ticking=false;
+    function updateTilt(){
+      const rect=stage.getBoundingClientRect();
+      const vh=window.innerHeight || document.documentElement.clientHeight;
+      const center=rect.top + rect.height/2;
+      const progress=Math.max(-1,Math.min(1,(center-vh/2)/(vh/2)));
+      stage.style.transform=`rotateX(${(-progress*8).toFixed(2)}deg)`;
+      ticking=false;
+    }
+    window.addEventListener('scroll',()=>{
+      if(!ticking){requestAnimationFrame(updateTilt);ticking=true;}
+    },{passive:true});
+    updateTilt();
+  }
+})();
+</script>
+<script>
+/* ===== INSTANT ASSISTANT CHAT WIDGET ===== */
+(function(){
+  const launcher=document.getElementById('chatLauncher');
+  const win=document.getElementById('chatWindow');
+  const closeBtn=document.getElementById('chatCloseBtn');
+  const body=document.getElementById('chatBody');
+  const quick=document.getElementById('chatQuick');
+  const input=document.getElementById('chatInput');
+  const sendBtn=document.getElementById('chatSendBtn');
+  const dot=document.getElementById('chatDot');
+  if(!launcher||!win) return;
+
+  const WA='https://wa.me/923313166573';
+  const waLink=(msg)=>`${WA}?text=${encodeURIComponent(msg)}`;
+
+  const FAQ=[
+    {keys:['course','learn','education','free course','basics'],reply:"The trading courses are 100% free — covering basics, technical analysis, price action, risk management and psychology. Tap below to get started on WhatsApp.",cta:"Get Free Courses",wa:"Assalam-o-Alaikum, I want the free trading courses."},
+    {keys:['signal','daily signal','trade idea'],reply:"Daily market signals are shared for free with entry, TP, SL and context. No result is ever guaranteed — always use proper risk management. Want to join?",cta:"Get Daily Signals",wa:"Assalam-o-Alaikum, I want the free daily signals."},
+    {keys:['bot','auto','automation','automated'],reply:"The Auto Bot System supports systematic, risk-aware automated trading with a minimum deposit of $100. Returns are indicative targets only, never guaranteed.",cta:"Ask About the Bot",wa:"Assalam-o-Alaikum, I want details about the Auto Bot System."},
+    {keys:['price','cost','fee','minimum deposit','deposit'],reply:"Courses and daily signals are completely free. The Auto Bot System requires a minimum deposit of $100. For exact current details, message us directly.",cta:"Ask About Pricing",wa:"Assalam-o-Alaikum, I have a question about pricing."},
+    {keys:['proof','result','track record','verified'],reply:"You can see real trading screenshots, TradingView breakdowns and account results in the Results section on this page. Past performance never guarantees future results.",cta:null,wa:null},
+    {keys:['risk','safe','guarantee','loss'],reply:"Trading always involves risk — no course, signal or bot can guarantee profit. We focus on discipline, risk management and realistic expectations, not promises.",cta:null,wa:null},
+    {keys:['contact','whatsapp','telegram','talk','human','agent','support'],reply:"You can reach Muzamil directly anytime — WhatsApp is fastest for quick replies, Telegram is great for community updates.",cta:"Chat on WhatsApp",wa:"Assalam-o-Alaikum, I'd like to talk to you directly."},
+    {keys:['hi','hello','salam','assalam','hey'],reply:"Hey! 👋 I'm the instant assistant for Trade With Muzamil. Ask me about courses, signals, the auto bot, or pricing — or tap a quick option below.",cta:null,wa:null}
+  ];
+
+  const QUICK_OPTIONS=[
+    {label:'Free Courses',key:'course'},
+    {label:'Daily Signals',key:'signal'},
+    {label:'Auto Bot',key:'bot'},
+    {label:'Pricing',key:'price'},
+    {label:'Talk to Muzamil',key:'contact'}
+  ];
+
+  function addMsg(text,who){
+    const el=document.createElement('div');
+    el.className='chat-msg '+who;
+    el.textContent=text;
+    body.appendChild(el);
+    body.scrollTop=body.scrollHeight;
+    return el;
+  }
+
+  function addCta(label,wa){
+    const el=document.createElement('a');
+    el.className='chat-msg bot';
+    el.style.cssText='display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-weight:800;color:#0a2612;background:linear-gradient(135deg,#28ff73,#0fb957);border:none;cursor:pointer';
+    el.href=waLink(wa);
+    el.target='_blank';
+    el.rel='noopener';
+    el.textContent=label+' →';
+    body.appendChild(el);
+    body.scrollTop=body.scrollHeight;
+  }
+
+  function showTyping(){
+    const t=document.createElement('div');
+    t.className='chat-typing';
+    t.id='chatTypingIndicator';
+    t.innerHTML='<span></span><span></span><span></span>';
+    body.appendChild(t);
+    body.scrollTop=body.scrollHeight;
+    return t;
+  }
+
+  function matchFaq(text){
+    const low=text.toLowerCase();
+    for(const item of FAQ){
+      if(item.keys.some(k=>low.includes(k))) return item;
+    }
+    return null;
+  }
+
+  function respond(userText){
+    addMsg(userText,'user');
+    const typing=showTyping();
+    const delay=420+Math.random()*380;
+    setTimeout(()=>{
+      typing.remove();
+      const match=matchFaq(userText);
+      if(match){
+        addMsg(match.reply,'bot');
+        if(match.cta) addCta(match.cta,match.wa);
+      }else{
+        addMsg("I don't have an instant answer for that one — Muzamil can help directly on WhatsApp.",'bot');
+        addCta('Continue on WhatsApp',userText);
+      }
+    },delay);
+  }
+
+  function renderQuick(){
+    quick.innerHTML='';
+    QUICK_OPTIONS.forEach(opt=>{
+      const b=document.createElement('button');
+      b.type='button';
+      b.textContent=opt.label;
+      b.addEventListener('click',()=>{
+        const item=FAQ.find(f=>f.keys[0]===opt.key);
+        if(item) respond(item.keys[0]);
+      });
+      quick.appendChild(b);
+    });
+  }
+
+  function openChat(){
+    win.classList.add('open');
+    dot.style.display='none';
+    if(!body.dataset.greeted){
+      body.dataset.greeted='1';
+      const typing=showTyping();
+      setTimeout(()=>{
+        typing.remove();
+        addMsg("Assalam-o-Alaikum! 👋 I'm the instant assistant for Trade With Muzamil. Ask about courses, signals, the auto bot or pricing — I reply instantly. Anything else, I'll connect you straight to Muzamil.",'bot');
+        renderQuick();
+      },500);
+    }
+  }
+  function closeChat(){win.classList.remove('open')}
+
+  launcher.addEventListener('click',()=>{
+    win.classList.contains('open') ? closeChat() : openChat();
+  });
+  closeBtn.addEventListener('click',closeChat);
+
+  sendBtn.addEventListener('click',()=>{
+    const val=input.value.trim();
+    if(!val) return;
+    respond(val);
+    input.value='';
+  });
+  input.addEventListener('keydown',e=>{
+    if(e.key==='Enter'){
+      e.preventDefault();
+      sendBtn.click();
+    }
+  });
+})();
+
+/* ===== PREMIUM ENQUIRY FORM ===== */
+(function(){
+  const form=document.getElementById('enquiryForm');
+  if(!form) return;
+  const successBox=document.getElementById('enquirySuccess');
+  const submitBtn=document.getElementById('enquirySubmitBtn');
+  const captchaQ=document.getElementById('captchaQ');
+  const captchaInput=document.getElementById('eqCaptcha');
+
+  // Your free Web3Forms access key — get one instantly at https://web3forms.com (no domain required)
+  const WEB3FORMS_KEY='3fc47ac5-a8a4-4579-b932-9e5f5840ffcb';
+
+  let captchaAnswer=0;
+  function newCaptcha(){
+    const a=Math.floor(Math.random()*8)+2;
+    const b=Math.floor(Math.random()*8)+1;
+    captchaAnswer=a+b;
+    captchaQ.textContent=`${a} + ${b} =`;
+    captchaInput.value='';
+  }
+  newCaptcha();
+
+  function setError(fieldName,msg){
+    const field=form.querySelector(`[data-field="${fieldName}"]`);
+    if(!field) return;
+    field.classList.toggle('error',!!msg);
+    field.querySelector('.err-msg').textContent=msg||'';
+  }
+
+  function validate(data){
+    let ok=true;
+    if(!data.name || data.name.trim().length<2){setError('name','Please enter your full name');ok=false;}else setError('name','');
+    const emailRe=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if(!emailRe.test(data.email||'')){setError('email','Enter a valid email address');ok=false;}else setError('email','');
+    const waRe=/^[0-9+\s-]{7,15}$/;
+    if(!waRe.test(data.whatsapp||'')){setError('whatsapp','Enter a valid WhatsApp number');ok=false;}else setError('whatsapp','');
+    if(!data.subject || data.subject.trim().length<3){setError('subject','Please add a short subject');ok=false;}else setError('subject','');
+    if(!data.message || data.message.trim().length<8){setError('message','Message is too short');ok=false;}else setError('message','');
+    if(parseInt(captchaInput.value,10)!==captchaAnswer){setError('captcha','Incorrect answer, try again');ok=false;}else setError('captcha','');
+    return ok;
+  }
+
+  form.addEventListener('submit',async(e)=>{
+    e.preventDefault();
+
+    // Honeypot: real users never fill this hidden field — bots often do
+    if(form.botcheck.value){return;}
+
+    const data={
+      name:form.name.value,
+      email:form.email.value,
+      whatsapp:form.whatsapp.value,
+      subject:form.subject.value,
+      message:form.message.value
+    };
+
+    if(!validate(data)) return;
+
+    submitBtn.classList.add('loading');
+    submitBtn.disabled=true;
+
+    try{
+      if(WEB3FORMS_KEY==='YOUR_WEB3FORMS_ACCESS_KEY'){
+        // Setup not finished yet — surface a clear message instead of failing silently
+        throw new Error('form-not-configured');
+      }
+      const res=await fetch('https://api.web3forms.com/submit',{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({
+          access_key:WEB3FORMS_KEY,
+          subject:`New Enquiry: ${data.subject}`,
+          from_name:'Trade With Muzamil — Website',
+          name:data.name,
+          email:data.email,
+          whatsapp:data.whatsapp,
+          message:data.message
+        })
+      });
+      const result=await res.json();
+      if(result.success){
+        form.classList.add('hide');
+        successBox.classList.add('show');
+      }else{
+        throw new Error(result.message||'submit-failed');
+      }
+    }catch(err){
+      setError('message', err.message==='form-not-configured'
+        ? 'Form isn\'t connected yet — please message us on WhatsApp for now.'
+        : 'Something went wrong — please try again or use WhatsApp.');
+    }finally{
+      submitBtn.classList.remove('loading');
+      submitBtn.disabled=false;
+      newCaptcha();
+    }
+  });
+})();
+
+/* ===== SCROLL-REVEAL POLISH ===== */
+(function(){
+  const targets=document.querySelectorAll('section .container > *, .video-section .container > *');
+  if(!('IntersectionObserver' in window) || !targets.length) return;
+  targets.forEach((el,i)=>{
+    el.classList.add('reveal');
+    el.style.transitionDelay=(i%4)*0.06+'s';
+  });
+  const io=new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
+      }
+    });
+  },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  targets.forEach(el=>io.observe(el));
+})();
+
+/* ===== CINEMATIC SCROLL PROGRESS BAR ===== */
+(function(){
+  const bar=document.getElementById('scrollProgress');
+  if(!bar) return;
+  let ticking=false;
+  function update(){
+    const h=document.documentElement;
+    const scrolled=h.scrollTop || document.body.scrollTop;
+    const max=h.scrollHeight - h.clientHeight;
+    bar.style.width=(max>0 ? (scrolled/max*100) : 0)+'%';
+    ticking=false;
+  }
+  window.addEventListener('scroll',()=>{
+    if(!ticking){requestAnimationFrame(update);ticking=true;}
+  },{passive:true});
+  update();
+})();
+
+/* ===== CUSTOM CURSOR GLOW (desktop only) ===== */
+(function(){
+  const glow=document.getElementById('cursorGlow');
+  if(!glow || window.matchMedia('(hover: none)').matches) return;
+  let raf=null,mx=0,my=0;
+  document.addEventListener('mousemove',(e)=>{
+    mx=e.clientX; my=e.clientY;
+    glow.classList.add('active');
+    if(!raf){
+      raf=requestAnimationFrame(()=>{
+        glow.style.transform=`translate(${mx}px,${my}px) translate(-50%,-50%)`;
+        raf=null;
+      });
+    }
+  },{passive:true});
+  document.addEventListener('mouseleave',()=>glow.classList.remove('active'));
+})();
+
+/* ===== MAGNETIC BUTTONS ===== */
+(function(){
+  if(window.matchMedia('(hover: none)').matches) return;
+  document.querySelectorAll('.btn').forEach(btn=>{
+    btn.addEventListener('mousemove',(e)=>{
+      const r=btn.getBoundingClientRect();
+      const x=(e.clientX-r.left-r.width/2)*0.25;
+      const y=(e.clientY-r.top-r.height/2)*0.35;
+      btn.style.transform=`translate(${x}px,${y}px)`;
+    });
+    btn.addEventListener('mouseleave',()=>{btn.style.transform='';});
+  });
+})();
+
+/* ===== HERO 3D PARALLAX TILT ===== */
+(function(){
+  const card=document.querySelector('.hero-card');
+  if(!card || window.matchMedia('(hover: none)').matches) return;
+  const heroSection=card.closest('.hero');
+  if(!heroSection) return;
+  heroSection.addEventListener('mousemove',(e)=>{
+    const r=heroSection.getBoundingClientRect();
+    const px=(e.clientX-r.left)/r.width-0.5;
+    const py=(e.clientY-r.top)/r.height-0.5;
+    card.style.transform=`perspective(1000px) rotateY(${px*10}deg) rotateX(${-py*10}deg) translateZ(10px)`;
+  });
+  heroSection.addEventListener('mouseleave',()=>{
+    card.style.transform='perspective(1000px) rotateY(0) rotateX(0) translateZ(0)';
+  });
+})();
+</script>
+</body>
+</html>
