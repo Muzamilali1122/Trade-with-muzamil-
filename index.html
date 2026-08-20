@@ -297,6 +297,25 @@ main,footer,nav{position:relative}
 <style>.simple-preload body{background:#f4f7f5!important}.simple-preload #market3d{opacity:.10!important}</style>
 </head>
 <body>
+
+<!-- VIP ONE-MONTH PREMIUM COURSE OFFER -->
+<div class="vip-offer" id="vipOffer" role="dialog" aria-modal="true" aria-labelledby="vipOfferTitle">
+  <div class="vip-backdrop" data-close-vip></div>
+  <div class="vip-modal">
+    <button class="vip-close" id="vipClose" aria-label="Close offer">×</button>
+    <div class="vip-badge"><span>✦</span> LIMITED VIP OFFER <span>✦</span></div>
+    <div class="vip-crown">♛</div>
+    <div class="vip-kicker">TRADE WITH MUZAMIL PRESENTS</div>
+    <h2 id="vipOfferTitle">PREMIUM COURSE<br><strong>FREE FOR 1 MONTH</strong></h2>
+    <p class="vip-lead">Get access to premium trading education for one full month — absolutely free.</p>
+    <div class="vip-perks">
+      <span>✓ Premium Lessons</span><span>✓ Structured Learning</span><span>✓ Trading Concepts</span><span>✓ Risk Management</span>
+    </div>
+    <a class="vip-cta" href="https://wa.me/923313166573" target="_blank" rel="noopener">CLAIM YOUR VIP ACCESS <span>→</span></a>
+    <small>Limited-time promotional offer. Trading involves risk. No profits are guaranteed.</small>
+  </div>
+</div>
+
 <div class="scroll-progress" id="scrollProgress"></div>
 <div class="cursor-glow" id="cursorGlow"></div>
 <canvas id="market3d" aria-hidden="true"></canvas><div class="holo" aria-hidden="true"><i></i><i></i><i></i></div><div class="scanline" aria-hidden="true"></div>
@@ -1112,6 +1131,19 @@ body.simple-mode .float-contact a{filter:saturate(1.05)!important}
     },{passive:true});
     updateTilt();
   }
+})();
+</script>
+<script>
+/* ===== VIP OFFER POPUP (once per session) ===== */
+(function(){
+  const modal=document.getElementById('vipOffer');
+  const close=document.getElementById('vipClose');
+  if(!modal) return;
+  function hide(){modal.classList.add('hidden');document.body.classList.remove('vip-open');try{sessionStorage.setItem('twmVipClosed','1')}catch(e){}}
+  try{if(sessionStorage.getItem('twmVipClosed')==='1') hide()}catch(e){}
+  close?.addEventListener('click',hide);
+  modal.querySelectorAll('[data-close-vip]').forEach(x=>x.addEventListener('click',hide));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!modal.classList.contains('hidden'))hide()});
 })();
 </script>
 <script>
