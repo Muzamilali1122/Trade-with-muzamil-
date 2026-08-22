@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07100b">
+<meta name="description" content="Trade With Muzamil — practical trading education, market insights, tools and disciplined trading support.">
+<title>Trade With Muzamil — Trading Education & Market Insights</title>
+<style>
+:root{--bg:#f5f7f3;--ink:#0b120e;--muted:#657069;--line:#dfe6e0;--green:#16b85a;--deep:#087c3a;--dark:#07100b;--card:#fff;--max:1240px;--ease:cubic-bezier(.2,.8,.2,1)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}a{text-decoration:none;color:inherit}button,input,select,textarea{font:inherit}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}.topline{height:4px;background:linear-gradient(90deg,#0a7f3d,#26e878,#0a7f3d)}
+.nav{position:sticky;top:0;z-index:50;background:rgba(245,247,243,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(12,25,17,.08)}.navin{height:78px;display:flex;align-items:center;justify-content:space-between;gap:30px}.brand{display:flex;align-items:center;gap:12px;font-size:13px;font-weight:900;letter-spacing:.08em}.mark{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 32% 24%,#1a2b1f,#050b07 74%);box-shadow:0 0 0 1px rgba(201,150,46,.5),0 8px 18px rgba(0,0,0,.35),inset 0 2px 4px rgba(255,255,255,.08),inset 0 -3px 6px rgba(0,0,0,.5);position:relative}.mark:before{content:"";position:absolute;inset:-3px;border-radius:50%;border:1px solid rgba(201,150,46,.22);pointer-events:none}.mark svg{width:24px;filter:drop-shadow(0 2px 2px rgba(0,0,0,.4))}.navlinks{display:flex;gap:25px;font-size:12px;color:#526057}.navlinks a:hover{color:var(--green)}.navcta{display:flex;gap:8px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid #cfd9d2;border-radius:999px;padding:11px 17px;font-size:11px;font-weight:850;transition:.25s var(--ease);cursor:pointer}.btn:hover{transform:translateY(-2px)}.btn-dark{background:var(--dark);color:#fff;border-color:var(--dark)}.btn-green{background:var(--green);color:#031008;border-color:var(--green)}.btn-ghost{background:transparent}.menu{display:none;background:none;border:1px solid var(--line);border-radius:50%;width:40px;height:40px}
+.hero{padding:110px 0 90px;min-height:760px;display:grid;grid-template-columns:1.08fr .92fr;gap:70px;align-items:center}.eyebrow{display:flex;align-items:center;gap:10px;font-size:10px;letter-spacing:.18em;font-weight:900;color:#557061;text-transform:uppercase}.eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(22,184,90,.1)}h1{font-size:clamp(54px,7.2vw,102px);line-height:.9;letter-spacing:-.065em;margin:22px 0 28px;font-weight:900;max-width:850px}h1 em{font-style:normal;color:var(--green)}.lead{font-size:18px;line-height:1.65;color:var(--muted);max-width:620px}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin:30px 0}.hero-note{display:flex;gap:22px;color:#758078;font-size:11px}.hero-visual{position:relative;min-height:580px;display:flex;align-items:flex-end;justify-content:center}.portrait{width:min(540px,100%);max-height:620px;object-fit:contain;filter:drop-shadow(0 35px 55px rgba(8,40,20,.22));position:relative;z-index:2}.visual-card{position:absolute;left:0;bottom:30px;z-index:4;background:#fff;border:1px solid #dce5df;border-radius:18px;padding:17px 20px;box-shadow:0 22px 60px rgba(8,30,15,.13)}.visual-card b{display:block;font-size:12px}.visual-card span{display:block;color:#68756d;font-size:10px;margin-top:3px}.visual-orb{position:absolute;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(30,221,105,.22),rgba(30,221,105,.04) 55%,transparent 70%)}
+.section{padding:105px 0;border-top:1px solid var(--line)}.section-head{display:grid;grid-template-columns:.35fr 1fr;gap:30px;margin-bottom:55px}.num{font-size:12px;font-weight:900;color:var(--green);letter-spacing:.15em}.section-head h2{font-size:clamp(42px,5vw,72px);line-height:.95;letter-spacing:-.055em;margin:0;max-width:850px}.section-head p{grid-column:2;color:var(--muted);max-width:690px;margin:18px 0 0;font-size:15px}.split{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.portrait-small{width:100%;max-height:560px;object-fit:contain;background:linear-gradient(145deg,#eaf1eb,#f9fbf8);border-radius:28px}.copy h3{font-size:38px;line-height:1;letter-spacing:-.04em;margin:0 0 18px}.copy p{color:var(--muted);font-size:15px;line-height:1.8}.stats{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line);margin-top:28px}.stat{padding:18px 0;border-bottom:1px solid var(--line)}.stat b{font-size:18px}.stat span{display:block;font-size:10px;color:var(--muted);margin-top:3px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}.card{padding:30px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-height:280px;background:rgba(255,255,255,.38)}.card .n{font-size:11px;color:var(--green);font-weight:900}.card h3{font-size:26px;line-height:1;margin:55px 0 12px;letter-spacing:-.04em}.card p{color:var(--muted);font-size:13px;line-height:1.7}.tag{display:inline-flex;padding:6px 9px;border-radius:999px;background:#e9f8ee;color:#08783a;font-size:9px;font-weight:900;letter-spacing:.08em}
+.insights{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.insight{background:var(--dark);color:#fff;border-radius:22px;padding:28px;min-height:270px;position:relative;overflow:hidden}.insight:after{content:"";position:absolute;right:-80px;bottom:-90px;width:220px;height:220px;border-radius:50%;background:rgba(22,184,90,.18)}.insight small{color:#8da094;font-size:10px;letter-spacing:.1em}.insight h3{font-size:30px;margin:45px 0 8px}.insight p{color:#aebbb2;font-size:12px}.levels{display:flex;gap:8px;margin-top:22px}.levels span{padding:8px 10px;border:1px solid rgba(255,255,255,.1);border-radius:9px;color:#9eaaa2;font-size:10px}.levels b{color:#fff}
+.tools{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.tool{padding:28px;border:1px solid var(--line);border-radius:20px;background:#fff}.tool h3{margin:8px 0 24px;font-size:24px}.tool label{display:block;font-size:10px;font-weight:800;color:#647169;margin:10px 0}.tool input{width:100%;padding:11px;border:1px solid #dce5df;border-radius:10px;outline:none;background:#fafcfa}.result{margin-top:14px;padding:12px;background:#f0f7f2;border-radius:10px;font-size:11px;color:#326044;min-height:39px}
+.proof-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}.proof{grid-column:span 3;border-radius:18px;overflow:hidden;background:#fff;border:1px solid var(--line)}.proof:nth-child(1),.proof:nth-child(8){grid-column:span 6}.proof img{width:100%;aspect-ratio:4/3;display:block;object-fit:cover}.proof:nth-child(1) img,.proof:nth-child(8) img{aspect-ratio:16/9}.proof p{padding:12px 14px;margin:0;color:#68756d;font-size:10px}
+.video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.video{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff}.video video{width:100%;display:block;aspect-ratio:16/10;background:#07100b}.video div{padding:14px;font-size:11px;font-weight:800}
+.cta-band{background:var(--dark);color:#fff;border-radius:28px;padding:55px;display:flex;justify-content:space-between;align-items:center;gap:30px}.cta-band h2{font-size:clamp(38px,5vw,68px);line-height:.95;letter-spacing:-.05em;margin:0;max-width:720px}.cta-band p{color:#9eaaa2;max-width:570px;font-size:13px}.form{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:28px}.form input,.form select,.form textarea{width:100%;border:1px solid rgba(255,255,255,.13);background:#0d1711;color:#fff;border-radius:11px;padding:13px;outline:none}.form textarea,.form button{grid-column:1/-1}
+.footer{background:var(--dark);color:#fff;margin-top:105px;padding:45px 0 30px}.footergrid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:50px}.footer h3{font-size:20px}.footer p,.footer a{color:#8f9d94;font-size:11px}.footer a{display:block;margin:7px 0}.copyright{border-top:1px solid rgba(255,255,255,.1);margin-top:35px;padding-top:20px;color:#718077;font-size:9px}.float{position:fixed;right:18px;bottom:18px;z-index:40;display:flex;flex-direction:column;gap:10px}.float a{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;color:#fff;box-shadow:0 15px 35px rgba(0,0,0,.3);transition:.25s;border:1px solid rgba(255,255,255,.15)}.float a:hover{transform:scale(1.08) translateY(-3px)}.float a svg{width:24px;height:24px}.wa{background:linear-gradient(145deg,#25d366,#128c42)}.tg{background:linear-gradient(145deg,#3aa3f0,#1866c0)}.theme{position:fixed;right:18px;top:96px;z-index:40;width:40px;height:40px;border:1px solid var(--line);border-radius:50%;background:#fff;cursor:pointer}
+.dark{--bg:#06100a;--ink:#f5f8f5;--muted:#98a69d;--line:rgba(255,255,255,.1);--card:#0b1510}.dark .nav{background:rgba(6,16,10,.88);border-color:rgba(255,255,255,.08)}.dark .mark,.dark .theme,.dark .portrait-small,.dark .tool{background:#0c1711;border-color:rgba(255,255,255,.1)}.dark .navlinks,.dark .hero-note{color:#89978e}.dark .card,.dark .tool{background:#0a140e}.dark .visual-card{background:#0b1510;border-color:rgba(255,255,255,.1);color:#fff}.dark .visual-card span,.dark .copy p,.dark .stat span{color:#89978e}.dark .result{background:#0d2115;color:#8ed5a8}.dark .tag{background:rgba(22,184,90,.1)}
+#candle-bg{position:fixed;inset:0;width:100%;height:100%;z-index:-2;pointer-events:none;opacity:.38;background:#06100a}.dark #candle-bg{opacity:.55}.candle-vignette{position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(circle at 50% 15%,rgba(22,184,90,.08),transparent 42%),linear-gradient(to bottom,rgba(6,16,10,.18),rgba(6,16,10,.78))}body{position:relative;isolation:isolate}.nav,.section,.footer{position:relative}.hero{position:relative}.hero:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(circle at 55% 45%,rgba(22,184,90,.08),transparent 40%)}
+.reveal{opacity:0;transform:translateY(24px);transition:.8s var(--ease)}.reveal.show{opacity:1;transform:none}
+@media(max-width:950px){.navlinks{display:none}.navcta{display:none}.menu{display:block}.hero{grid-template-columns:1fr;padding-top:75px}.hero-visual{min-height:470px}.section-head{grid-template-columns:1fr}.section-head p{grid-column:auto}.split{grid-template-columns:1fr}.cards,.insights,.tools,.video-grid{grid-template-columns:1fr 1fr}.proof{grid-column:span 6!important}.footergrid{grid-template-columns:1fr 1fr}.cta-band{display:block}.cta-band .hero-actions{margin-bottom:0}}
+@media(max-width:620px){.wrap{width:min(var(--max),calc(100% - 30px))}.navin{height:68px}.hero{padding:65px 0}.hero h1{font-size:51px}.hero-visual{min-height:380px}.visual-orb{width:320px;height:320px}.visual-card{left:0;bottom:10px}.section{padding:75px 0}.section-head h2{font-size:43px}.cards,.insights,.tools,.video-grid,.footergrid{grid-template-columns:1fr}.proof{grid-column:span 12!important}.proof img,.proof:nth-child(1) img,.proof:nth-child(8) img{aspect-ratio:4/3}.cta-band{padding:30px 24px}.cta-band h2{font-size:43px}.form{grid-template-columns:1fr}.form textarea,.form button{grid-column:auto}.theme{top:auto;bottom:74px}.float{bottom:16px}.hero-note{flex-wrap:wrap}.portrait{max-height:440px}}
+/* ===== VIP OFFER POPUP ===== */
+.vip-offer{position:fixed;inset:0;z-index:200;display:flex;align-items:center;justify-content:center;padding:20px}
+.vip-offer.hidden{display:none}
+.vip-backdrop{position:absolute;inset:0;background:rgba(6,16,10,.72);backdrop-filter:blur(10px)}
+.vip-modal{position:relative;max-width:420px;width:100%;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:40px 32px 32px;text-align:center;box-shadow:0 40px 100px rgba(0,0,0,.35);animation:vipPop .5s cubic-bezier(.2,.9,.3,1.3)}
+@keyframes vipPop{from{opacity:0;transform:scale(.9) translateY(10px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.vip-close{position:absolute;top:14px;right:16px;background:none;border:none;font-size:22px;color:var(--muted);cursor:pointer;line-height:1}
+.vip-badge{display:inline-flex;align-items:center;gap:8px;font-size:10px;font-weight:900;letter-spacing:.15em;color:#c9962e;margin-bottom:14px}
+.vip-crown{font-size:34px;color:#c9962e;margin-bottom:6px}
+.vip-kicker{font-size:9px;font-weight:800;letter-spacing:.15em;color:var(--muted);text-transform:uppercase;margin-bottom:10px}
+.vip-modal h2{font-size:24px;line-height:1.15;letter-spacing:-.02em;margin:0 0 12px}
+.vip-modal h2 strong{color:var(--green)}
+.vip-lead{color:var(--muted);font-size:13px;line-height:1.6;margin:0 0 18px}
+.vip-perks{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:22px}
+.vip-perks span{font-size:10px;font-weight:700;color:var(--green);background:rgba(22,184,90,.1);border:1px solid rgba(22,184,90,.25);border-radius:999px;padding:6px 11px}
+.vip-cta{display:inline-flex;align-items:center;gap:8px;background:var(--green);color:#031008;font-weight:900;font-size:12px;letter-spacing:.05em;padding:14px 22px;border-radius:999px;text-decoration:none;box-shadow:0 15px 35px rgba(22,184,90,.3);transition:.2s}
+.vip-cta:hover{transform:translateY(-2px)}
+.vip-modal small{display:block;margin-top:16px;color:var(--muted);font-size:9.5px;line-height:1.5}
+/* ===== INSTANT ASSISTANT CHAT WIDGET ===== */
+.chat-launcher{position:fixed;right:18px;bottom:78px;z-index:75;width:52px;height:52px;border-radius:50%;border:1px solid rgba(22,184,90,.4);background:var(--green);display:grid;place-items:center;cursor:pointer;box-shadow:0 15px 35px rgba(0,0,0,.25);transition:.25s}
+.chat-launcher:hover{transform:scale(1.07) translateY(-2px)}
+.chat-launcher svg{width:23px;height:23px}
+.chat-dot{position:absolute;top:-2px;right:-2px;width:12px;height:12px;border-radius:50%;background:#ff4d4d;border:2px solid var(--bg)}
+.chat-window{position:fixed;right:18px;bottom:140px;z-index:80;width:min(340px,calc(100vw - 36px));max-height:min(520px,calc(100vh - 190px));display:none;flex-direction:column;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--card);box-shadow:0 30px 80px rgba(0,0,0,.3);opacity:0;transform:translateY(12px) scale(.97);transition:opacity .2s ease,transform .2s ease}
+.chat-window.open{display:flex;opacity:1;transform:translateY(0) scale(1)}
+.chat-head{display:flex;align-items:center;gap:10px;padding:14px 15px;border-bottom:1px solid var(--line)}
+.chat-avatar{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;background:rgba(22,184,90,.1);border:1px solid rgba(22,184,90,.3);font-weight:900}
+.chat-head b{display:block;font-size:12.5px}.chat-head span{display:block;font-size:9.5px;color:var(--green)}
+.chat-head span:before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--green);margin-right:5px}
+.chat-close-btn{margin-left:auto;background:none;border:none;color:var(--muted);font-size:19px;cursor:pointer;padding:4px}
+.chat-body{flex:1;overflow-y:auto;padding:15px;display:flex;flex-direction:column;gap:9px;min-height:200px}
+.chat-msg{max-width:86%;padding:9px 12px;border-radius:13px;font-size:12px;line-height:1.5}
+.chat-msg.bot{align-self:flex-start;background:rgba(22,184,90,.06);border:1px solid var(--line);border-bottom-left-radius:4px}
+.chat-msg.user{align-self:flex-end;background:var(--green);color:#031008;border-bottom-right-radius:4px;font-weight:600}
+.chat-typing{align-self:flex-start;display:flex;gap:4px;padding:11px 13px;background:rgba(22,184,90,.06);border-radius:13px;border-bottom-left-radius:4px}
+.chat-typing span{width:5px;height:5px;border-radius:50%;background:var(--green);animation:chatTyping 1.1s infinite}
+.chat-typing span:nth-child(2){animation-delay:.15s}.chat-typing span:nth-child(3){animation-delay:.3s}
+@keyframes chatTyping{0%,60%,100%{opacity:.3}30%{opacity:1}}
+.chat-quick{display:flex;flex-wrap:wrap;gap:6px;padding:0 15px 11px}
+.chat-quick button{border:1px solid rgba(22,184,90,.3);background:rgba(22,184,90,.06);color:var(--ink);font-size:10.5px;padding:6px 10px;border-radius:999px;cursor:pointer}
+.chat-quick button:hover{background:rgba(22,184,90,.14)}
+.chat-foot{display:flex;gap:7px;padding:11px;border-top:1px solid var(--line)}
+.chat-foot input{flex:1;background:transparent;border:1px solid var(--line);border-radius:10px;padding:9px 11px;color:var(--ink);font-size:12px;outline:none}
+.chat-foot button{width:36px;height:36px;border-radius:10px;border:none;background:var(--green);color:#031008;font-weight:900;cursor:pointer;flex-shrink:0}
+@media(max-width:650px){.chat-launcher{bottom:70px;right:14px}.chat-window{right:10px;bottom:126px;width:calc(100vw - 20px)}}
+/* ===== PREMIUM ENQUIRY FORM (upgraded lead form) ===== */
+.pf-field{display:flex;flex-direction:column;gap:4px}
+.pf-field .err-msg{font-size:10px;color:#ff8a8a;min-height:12px}
+.pf-field.error input,.pf-field.error textarea{border-color:rgba(255,80,80,.6)!important}
+.pf-hp{position:absolute;left:-9999px;opacity:0}
+.pf-captcha{display:flex;align-items:center;gap:10px;grid-column:1/-1;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.13);border-radius:11px;padding:12px 13px}
+.pf-captcha b{color:var(--green);font-weight:900;white-space:nowrap}
+.pf-captcha input{flex:1;border:none!important;background:transparent!important;padding:0!important}
+.pf-submit{position:relative;display:flex;align-items:center;justify-content:center;gap:9px}
+.pf-spinner{width:14px;height:14px;border-radius:50%;border:2px solid rgba(3,16,8,.25);border-top-color:#031008;animation:pfSpin .7s linear infinite;display:none}
+.pf-submit.loading .pf-spinner{display:inline-block}
+@keyframes pfSpin{to{transform:rotate(360deg)}}
+.pf-success{display:none;flex-direction:column;align-items:center;text-align:center;gap:12px;padding:20px 5px}
+.pf-success.show{display:flex;animation:vipPop .5s cubic-bezier(.2,.9,.3,1.3)}
+.pf-check{width:52px;height:52px;border-radius:50%;background:var(--green);display:grid;place-items:center}
+.pf-success h4{font-size:16px;color:#fff;margin:0}
+.pf-success p{color:#aebbb2;font-size:11.5px;max-width:320px}
+#lead.hide{display:none}
+/* ===== 3D PREMIUM ROTATOR BANNER ===== */
+.rotator-section{padding:26px 0 10px}
+.rotator-wrap{width:100%;perspective:1300px;padding:10px 0}
+.rotator-stage{position:relative;height:230px;display:flex;align-items:center;justify-content:center;transform-style:preserve-3d}
+.rotator-ring{position:relative;width:180px;height:220px;transform-style:preserve-3d;animation:rotator-spin 22s linear infinite}
+.rotator-ring:hover{animation-play-state:paused}
+@keyframes rotator-spin{to{transform:rotateY(360deg)}}
+.rotator-card{position:absolute;inset:0;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--card);box-shadow:0 20px 55px rgba(0,0,0,.25);backface-visibility:hidden;text-decoration:none;color:var(--ink)}
+.rotator-card img{width:100%;height:100%;object-fit:cover;display:block}
+.rotator-card .rotator-tag{position:absolute;left:8px;top:8px;font-size:7.5px;font-weight:900;letter-spacing:1px;padding:5px 8px;border-radius:999px;background:rgba(6,16,10,.75);color:var(--green);text-transform:uppercase}
+.rotator-card .rotator-cap{position:absolute;left:0;right:0;bottom:0;padding:11px;background:linear-gradient(0deg,rgba(6,16,10,.85),transparent);font-size:10px;color:#fff;font-weight:700}
+.rotator-card.icon-card{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:14px;text-align:center}
+.rotator-card.icon-card .r-icon{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-size:20px;font-weight:900;color:var(--green);background:rgba(22,184,90,.08);border:1px solid rgba(22,184,90,.25)}
+.rotator-card.icon-card b{font-size:12px}
+.rotator-card.icon-card span{font-size:9.5px;color:var(--muted);line-height:1.4;padding:0 6px}
+@media(max-width:650px){.rotator-stage{height:190px}.rotator-ring{width:150px;height:185px}}
+@media(prefers-reduced-motion:reduce){.rotator-ring{animation:none}.reveal{opacity:1;transform:none}}
+/* ===== VIP THUMBNAIL BANNER (persistent, not the popup) ===== */
+.vip-thumb{display:block;margin:18px auto 0;max-width:820px;border-radius:16px;overflow:hidden;position:relative;text-decoration:none;background:linear-gradient(120deg,#0d1911,#0a140e 55%,#0d1911);border:1px solid rgba(201,150,46,.35);box-shadow:0 20px 55px rgba(0,0,0,.3);transition:.25s}
+.vip-thumb:hover{transform:translateY(-2px);box-shadow:0 26px 65px rgba(0,0,0,.4)}
+.vip-thumb-in{display:flex;align-items:center;gap:16px;padding:16px 20px}
+.vip-thumb-badge{flex-shrink:0;font-size:9px;font-weight:900;letter-spacing:.12em;color:#0a0f0b;background:linear-gradient(135deg,#e8c974,#c9962e);padding:6px 10px;border-radius:999px;white-space:nowrap}
+.vip-thumb-text{flex:1;min-width:0}
+.vip-thumb-text b{display:block;color:#fff;font-size:13.5px;font-weight:900}
+.vip-thumb-text span{display:block;color:#9eaaa2;font-size:10.5px;margin-top:2px}
+.vip-thumb-cta{flex-shrink:0;font-size:11px;font-weight:900;color:var(--green);white-space:nowrap}
+@media(max-width:620px){.vip-thumb-in{padding:13px 15px;gap:10px}.vip-thumb-text b{font-size:12px}.vip-thumb-text span{font-size:9.5px}.vip-thumb-cta{display:none}}
+</style>
+</head>
+<body class="dark"><canvas id="candle-bg" aria-hidden="true"></canvas><div class="candle-vignette" aria-hidden="true"></div>
+
+<!-- VIP ONE-MONTH PREMIUM COURSE OFFER -->
+<div class="vip-offer" id="vipOffer" role="dialog" aria-modal="true" aria-labelledby="vipOfferTitle">
+  <div class="vip-backdrop" data-close-vip></div>
+  <div class="vip-modal">
+    <button class="vip-close" id="vipClose" aria-label="Close offer">×</button>
+    <div class="vip-badge"><span>✦</span> LIMITED VIP OFFER <span>✦</span></div>
+    <div class="vip-crown">♛</div>
+    <div class="vip-kicker">TRADE WITH MUZAMIL PRESENTS</div>
+    <h2 id="vipOfferTitle">PREMIUM COURSE<br><strong>FREE FOR 1 MONTH</strong></h2>
+    <p class="vip-lead">Get access to premium trading education for one full month — absolutely free.</p>
+    <div class="vip-perks">
+      <span>✓ Premium Lessons</span><span>✓ Structured Learning</span><span>✓ Trading Concepts</span><span>✓ Risk Management</span>
+    </div>
+    <a class="vip-cta" href="https://wa.me/923313166573" target="_blank" rel="noopener">CLAIM YOUR VIP ACCESS <span>→</span></a>
+    <small>Limited-time promotional offer. Trading involves risk. No profits are guaranteed.</small>
+  </div>
+</div>
+
+<div class="topline"></div>
+<header class="nav"><div class="wrap navin"><a class="brand" href="#top"><span class="mark"><svg viewBox="0 0 40 40" width="24" height="24">
+  <path d="M9 30h6v-9H9v9Z" fill="#0a7f3d"/><path d="M9 30h6v2.4l-6 2.6v-5Z" fill="#063f1e"/><path d="M9 21h6l2.4-2.4H11.4L9 21Z" fill="#3fe08a"/>
+  <path d="M17 30h6v-14h-6v14Z" fill="#16b85a"/><path d="M17 30h6v2.4l-6 2.6v-5Z" fill="#0a7f3d"/><path d="M17 16h6l2.4-2.4h-6L17 16Z" fill="#5dffa6"/>
+  <path d="M25 30h6v-19h-6v19Z" fill="#c9962e"/><path d="M25 30h6v2.4l-6 2.6v-5Z" fill="#8a651c"/><path d="M25 11h6l2.4-2.4h-6L25 11Z" fill="#f4d97a"/>
+  <line x1="12" y1="15" x2="12" y2="21" stroke="#3fe08a" stroke-width="1.3"/>
+  <line x1="20" y1="9" x2="20" y2="16" stroke="#5dffa6" stroke-width="1.3"/>
+  <line x1="28" y1="5" x2="28" y2="11" stroke="#f4d97a" stroke-width="1.3"/>
+</svg></span>TRADE WITH MUZAMIL</a><nav class="navlinks"><a href="#about">About</a><a href="#method">Method</a><a href="#insights">Insights</a><a href="#tools">Tools</a><a href="#proof">Results</a><a href="#courses">Courses</a><a href="#contact">Contact</a></nav><div class="navcta"><a class="btn btn-dark" href="https://wa.me/923313166573" target="_blank" rel="noopener">WhatsApp</a><a class="btn btn-green" href="https://t.me/Muzamilali110" target="_blank" rel="noopener">Telegram</a></div><button class="menu" id="menu" aria-label="Menu">☰</button></div></header>
+<button class="theme" id="theme" aria-label="Toggle theme">☼</button>
+
+<a class="vip-thumb wrap" href="https://wa.me/923313166573?text=Assalam-o-Alaikum%2C%20I%20want%20the%20Premium%20Course%20details." target="_blank" rel="noopener">
+  <div class="vip-thumb-in">
+    <span class="vip-thumb-badge">✦ VIP OFFER</span>
+    <span class="vip-thumb-text"><b>Premium Course — Free for 1 Month</b><span>Structured trading education, on us</span></span>
+    <span class="vip-thumb-cta">Claim Now →</span>
+  </div>
+</a>
+
+<section class="rotator-section wrap" aria-label="Trading services showcase">
+  <div class="rotator-wrap">
+    <div class="rotator-stage">
+      <div class="rotator-ring" id="rotatorRing">
+        <a class="rotator-card icon-card" href="#tools"><div class="r-icon">◈</div><b>Auto Bot</b><span>Systematic automation support</span></a>
+        <a class="rotator-card" href="#proof"><img src="assets/proof-08-tradingview-gold-bullish.jpg" alt="Gold bullish TradingView setup" loading="lazy"><span class="rotator-tag">Analysis</span><span class="rotator-cap">Gold — Bullish</span></a>
+        <a class="rotator-card icon-card" href="#courses"><div class="r-icon">▤</div><b>Free Courses</b><span>Basics to advanced, structured</span></a>
+        <a class="rotator-card" href="#about"><img src="assets/muzamil-portrait.png" alt="Muzamil Ali" loading="lazy"><span class="rotator-tag">Mentor</span><span class="rotator-cap">Muzamil Ali</span></a>
+        <a class="rotator-card icon-card" href="#courses"><div class="r-icon">◎</div><b>Daily Signals</b><span>Entry, TP, SL & context</span></a>
+        <a class="rotator-card" href="#proof"><img src="assets/proof-09-tradingview-gold-bearish.jpg" alt="Gold bearish TradingView setup" loading="lazy"><span class="rotator-tag">Analysis</span><span class="rotator-cap">Gold — Bearish</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main id="top">
+<section class="hero wrap"><div class="reveal"><div class="eyebrow"><i></i> TRADING EDUCATION • MARKET INSIGHTS</div><h1>Learn the market.<br><em>Build your edge.</em></h1><p class="lead">Practical trading education, market analysis and useful tools — designed around discipline, risk awareness and a clear process.</p><div class="hero-actions"><a class="btn btn-dark" href="#courses">Explore learning →</a><a class="btn btn-ghost" href="#proof">View results</a></div><div class="hero-note"><span>✓ Free education</span><span>✓ Trading tools</span><span>✓ Direct support</span></div></div><div class="hero-visual reveal"><div class="visual-orb"></div><img class="portrait" src="assets/muzamil-portrait.png" alt="Muzamil Ali — Trade With Muzamil" onerror="this.style.display='none'"><div class="visual-card"><b>TRADE WITH MUZAMIL</b><span>Trader • Educator • Analyst</span></div></div></section>
+<section class="section" id="about"><div class="wrap"><div class="section-head reveal"><div class="num">/01 — ABOUT</div><div><h2>A simpler way to approach trading.</h2><p>Trade With Muzamil focuses on making trading concepts easier to understand and turning them into a repeatable process.</p></div></div><div class="split"><div class="reveal"><img class="portrait-small" src="assets/muzamil-portrait.png" alt="Muzamil Ali profile" onerror="this.style.display='none'"></div><div class="copy reveal"><h3>Education first.<br>Discipline always.</h3><p>Muzamil Ali has one year of hands-on trading experience, mainly focused on Gold (XAU/USD), built through daily market analysis, live trade execution and continuous refinement of a personal risk-managed process. The goal here isn't to promise outcomes — it's to help traders understand market structure, planning, risk and execution so they can make more informed decisions of their own.</p><div class="stats"><div class="stat"><b>1 Year</b><span>Active trading experience</span></div><div class="stat"><b>60–70%</b><span>Personal win rate — verified via <a href="#proof" style="color:var(--green)">real results</a></span></div><div class="stat"><b>Education</b><span>Structured learning resources</span></div><div class="stat"><b>Support</b><span>Direct communication</span></div></div><p style="font-size:10px;color:var(--muted);margin-top:16px">Win rate reflects personal trading history over the stated period and is not a guarantee of future performance. Trading involves risk.</p></div></div></div></section>
+<section class="section" id="method"><div class="wrap"><div class="section-head reveal"><div class="num">/02 — METHOD</div><div><h2>Four parts of a better trading process.</h2><p>Use a clear workflow instead of chasing every move in the market.</p></div></div><div class="cards"><article class="card reveal"><span class="n">01</span><h3>Learn</h3><p>Build a strong foundation in market structure, technical concepts and trading terminology.</p></article><article class="card reveal"><span class="n">02</span><h3>Analyze</h3><p>Read context, identify levels and define the idea before thinking about execution.</p></article><article class="card reveal"><span class="n">03</span><h3>Manage risk</h3><p>Know where the idea is invalidated and size positions around acceptable risk.</p></article><article class="card reveal"><span class="n">04</span><h3>Execute</h3><p>Follow the plan, document decisions and improve through consistency rather than emotion.</p></article><article class="card reveal"><span class="n">05</span><h3>Review</h3><p>Use your results and mistakes as data to refine the process over time.</p></article><article class="card reveal"><span class="n">06</span><h3>Automate</h3><p>Where appropriate, use tools and automation to reduce repetitive work without removing risk.</p></article></div></div></section>
+<section class="section" id="insights"><div class="wrap"><div class="section-head reveal"><div class="num">/03 — INSIGHTS</div><div><h2>Market desk.</h2><p>A clean place for future daily bias, chart breakdowns and key levels.</p></div></div><div class="insights"><article class="insight reveal"><small>01 / BTC-USDT</small><h3>Bitcoin</h3><p>Watchlist card ready for your latest market thesis and invalidation level.</p><div class="levels"><span>Support <b>—</b></span><span>Resistance <b>—</b></span></div></article><article class="insight reveal"><small>02 / XAU-USD</small><h3>Gold</h3><p>Use this space for concise analysis rather than overwhelming visitors with charts.</p><div class="levels"><span>Support <b>—</b></span><span>Resistance <b>—</b></span></div></article><article class="insight reveal"><small>03 / EUR-USD</small><h3>Forex</h3><p>Ready for a daily bias, setup summary and risk-aware trading plan.</p><div class="levels"><span>Support <b>—</b></span><span>Resistance <b>—</b></span></div></article></div></div></section>
+<section class="section" id="tools"><div class="wrap"><div class="section-head reveal"><div class="num">/04 — TOOLS</div><div><h2>Useful tools. No noise.</h2><p>Simple calculators for planning trades. They do not predict markets.</p></div></div><div class="tools"><article class="tool reveal"><span class="tag">01 / RISK</span><h3>Risk / Reward</h3><label>Entry<input id="entry" type="number" placeholder="100"></label><label>Stop loss<input id="sl" type="number" placeholder="95"></label><label>Take profit<input id="tp" type="number" placeholder="110"></label><button class="btn btn-green" id="rr">Calculate R:R</button><div class="result" id="rrr">Enter values to calculate.</div></article><article class="tool reveal"><span class="tag">02 / SIZE</span><h3>Position Size</h3><label>Account size<input id="account" type="number" placeholder="1000"></label><label>Risk %<input id="risk" type="number" placeholder="1"></label><label>Stop distance<input id="distance" type="number" placeholder="10"></label><button class="btn btn-green" id="ps">Calculate size</button><div class="result" id="psr">Enter values to calculate.</div></article><article class="tool reveal"><span class="tag">03 / CHECK</span><h3>Trader Checklist</h3><p style="color:var(--muted);font-size:13px">Before execution:</p><p>✓ Market context is clear<br>✓ Entry is planned<br>✓ Stop loss is defined<br>✓ Risk is acceptable<br>✓ No emotional pressure</p><a class="btn btn-dark" href="#contact">Ask for guidance →</a></article></div></div></section>
+<section class="section" id="proof"><div class="wrap"><div class="section-head reveal"><div class="num">/05 — RESULTS</div><div><h2>Proof & trading media.</h2><p>Real screenshots and uploaded trading clips from the existing Trade With Muzamil project.</p></div></div>
+<div class="reveal" style="display:inline-flex;align-items:center;gap:10px;background:rgba(22,184,90,.08);border:1px solid rgba(22,184,90,.25);border-radius:999px;padding:9px 16px;margin-bottom:26px;font-size:11px;font-weight:800;color:var(--green)">✓ Verified Results — 60–70% personal win rate, 1 year of trading history shown below</div>
+<article class="proof reveal"><img src="assets/proof-01.jpg" alt="Trading result proof 1" loading="lazy"><p>Trading result screenshot</p></article><article class="proof reveal"><img src="assets/proof-02.jpg" alt="Trading result proof 2" loading="lazy"><p>Trading result screenshot</p></article><article class="proof reveal"><img src="assets/proof-03.jpg" alt="Trading result proof 3" loading="lazy"><p>Trading result screenshot</p></article><article class="proof reveal"><img src="assets/proof-04.jpg" alt="Trading result proof 4" loading="lazy"><p>Trading result screenshot</p></article><article class="proof reveal"><img src="assets/proof-05.jpg" alt="Trading result proof 5" loading="lazy"><p>Trading result screenshot</p></article><article class="proof reveal"><img src="assets/proof-06.jpg" alt="Trading result proof 6" loading="lazy"><p>Trading result screenshot</p></article><article class="proof reveal"><img src="assets/proof-07.jpg" alt="Trading result proof 7" loading="lazy"><p>Trading result screenshot</p></article><article class="proof reveal"><img src="assets/proof-08-tradingview-gold-bullish.jpg" alt="Gold bullish TradingView analysis" loading="lazy"><p>TradingView • Gold bullish</p></article><article class="proof reveal"><img src="assets/proof-09-tradingview-gold-bearish.jpg" alt="Gold bearish TradingView analysis" loading="lazy"><p>TradingView • Gold bearish</p></article></div><div class="video-grid" style="margin-top:28px"><article class="video reveal"><video controls playsinline preload="metadata" poster="assets/proof-01.jpg"><source src="assets/live-trading-01.mp4" type="video/mp4"></video><div>Live Trading Video 01</div></article><article class="video reveal"><video controls playsinline preload="metadata" poster="assets/proof-02.jpg"><source src="assets/live-trading-02.mp4" type="video/mp4"></video><div>Live Trading Video 02</div></article><article class="video reveal"><video controls playsinline preload="metadata" poster="assets/proof-03.jpg"><source src="assets/live-trading-03.mp4" type="video/mp4"></video><div>Live Trading Video 03</div></article></div></div></section>
+<section class="section" id="courses"><div class="wrap"><div class="section-head reveal"><div class="num">/06 — LEARNING</div><div><h2>Start free. Build properly.</h2><p>The existing free learning offer stays, but is presented with a cleaner premium structure.</p></div></div><div class="cards"><article class="card reveal"><span class="tag">FREE</span><h3>Trading Course</h3><p>Trading basics, technical analysis, price action, market structure, risk management and psychology.</p><a class="btn btn-green" href="https://wa.me/923313166573?text=Assalam-o-Alaikum%2C%20I%20want%20the%20free%20trading%20courses." target="_blank" rel="noopener">Get the course →</a></article><article class="card reveal"><span class="tag">FREE</span><h3>Daily Signals</h3><p>Market ideas with entry, take profit, stop loss, context and risk awareness.</p><a class="btn btn-dark" href="https://wa.me/923313166573?text=Assalam-o-Alaikum%2C%20I%20want%20the%20free%20daily%20signals." target="_blank" rel="noopener">Request signals →</a></article><article class="card reveal"><span class="tag">SUPPORT</span><h3>Auto Bot</h3><p>Automation support for eligible users. Any performance figures should be treated as indicative, not guaranteed.</p><a class="btn btn-ghost" href="https://wa.me/923313166573?text=Assalam-o-Alaikum%2C%20I%20want%20details%20about%20the%20Auto%20Bot%20System." target="_blank" rel="noopener">Ask for details →</a></article></div></div></section>
+<section class="section" id="contact"><div class="wrap"><div class="cta-band reveal"><div><div class="eyebrow" style="color:#83dba4"><i></i> /07 — GET STARTED</div><h2>Let’s make your trading process clearer.</h2><p>Choose what you need and connect directly. The site keeps the important paths simple: learn, analyze, manage risk and improve.</p></div><div><div class="hero-actions"><a class="btn btn-green" href="https://wa.me/923313166573" target="_blank" rel="noopener">WhatsApp →</a><a class="btn" style="color:#fff;border-color:rgba(255,255,255,.2)" href="https://t.me/Muzamilali110" target="_blank" rel="noopener">Telegram →</a></div><form class="form" id="lead" autocomplete="off">
+  <input type="text" name="botcheck" class="pf-hp" tabindex="-1" autocomplete="off">
+  <div class="pf-field"><input name="name" required placeholder="Your full name"><span class="err-msg"></span></div>
+  <div class="pf-field"><input name="email" type="email" required placeholder="you@gmail.com"><span class="err-msg"></span></div>
+  <div class="pf-field"><input name="contact" required placeholder="WhatsApp number"><span class="err-msg"></span></div>
+  <div class="pf-field"><select name="interest"><option>Free Trading Course</option><option>Daily Signals</option><option>Auto Bot</option><option>General Question</option></select></div>
+  <div class="pf-field" style="grid-column:1/-1"><textarea name="message" rows="3" placeholder="What do you need?"></textarea></div>
+  <div class="pf-captcha"><b id="captchaQ">? + ? =</b><input type="text" id="pfCaptcha" inputmode="numeric" placeholder="Quick check"></div>
+  <button class="btn btn-green pf-submit" type="submit" id="leadSubmitBtn"><span class="pf-spinner"></span><span>Send request →</span></button>
+</form>
+<div class="pf-success" id="leadSuccess">
+  <div class="pf-check"><svg viewBox="0 0 24 24" width="24" fill="none" stroke="#031008" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+  <h4>Enquiry Sent!</h4>
+  <p>Thanks for reaching out — we'll get back to you soon. For a faster reply, message us on WhatsApp too.</p>
+  <a class="btn btn-green" href="https://wa.me/923313166573" target="_blank">Message on WhatsApp</a>
+</div></div></div></div></section>
+</main>
+<footer class="footer"><div class="wrap"><div class="footergrid"><div><h3>TRADE WITH MUZAMIL</h3><p>Trading education, market insights and practical tools with a focus on discipline and risk awareness.</p></div><div><p><b style="color:#fff">Explore</b></p><a href="#about">About</a><a href="#method">Method</a><a href="#insights">Insights</a><a href="#tools">Tools</a></div><div><p><b style="color:#fff">Connect</b></p><a href="https://wa.me/923313166573" target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/Muzamilali110" target="_blank" rel="noopener">Telegram</a><a href="mailto:lifestylehack@gmail.com">lifestylehack@gmail.com</a></div></div><div class="copyright">© 2026 Trade With Muzamil. Educational content only. Trading involves substantial risk; no profit or return is guaranteed.</div></div></footer>
+<button class="chat-launcher" id="chatLauncher" aria-label="Chat with us" type="button">
+  <svg viewBox="0 0 24 24" fill="none" stroke="#031008" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+  <span class="chat-dot" id="chatDot"></span>
+</button>
+<div class="chat-window" id="chatWindow" role="dialog" aria-label="Instant assistant chat">
+  <div class="chat-head"><div class="chat-avatar">♛</div><div><b>Trade With Muzamil</b><span>Instant Assistant</span></div><button class="chat-close-btn" id="chatCloseBtn" aria-label="Close chat">×</button></div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="chat-quick" id="chatQuick"></div>
+  <div class="chat-foot"><input type="text" id="chatInput" placeholder="Type your question..." autocomplete="off"><button id="chatSendBtn" aria-label="Send">➤</button></div>
+</div>
+<div class="float"><a class="wa" href="https://wa.me/923313166573" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a><a class="tg" href="https://t.me/Muzamilali110" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="#fff"><path d="M21.5 3.5 2.7 10.9c-1 .4-1 1.7.1 2l4.6 1.4 1.8 5.6c.3.9 1.4 1.1 2 .4l2.6-2.9 4.8 3.6c.8.6 1.9.1 2.1-.9l3.2-15.1c.2-1-.8-1.9-1.7-1.5z"/></svg></a></div>
+<script>
+(()=>{
+const $=s=>document.querySelector(s), $$=s=>document.querySelectorAll(s);
+const saved=localStorage.getItem('twm-theme'); if(saved==='dark') document.body.classList.add('dark');
+$('#theme').onclick=()=>{document.body.classList.toggle('dark');localStorage.setItem('twm-theme',document.body.classList.contains('dark')?'dark':'light')};
+$('#menu').onclick=()=>{const n=$('.navlinks');const open=n.style.display==='flex';n.style.display=open?'none':'flex';if(!open){n.style.position='absolute';n.style.top='68px';n.style.left='15px';n.style.right='15px';n.style.padding='18px';n.style.flexDirection='column';n.style.background='var(--bg)';n.style.border='1px solid var(--line)';n.style.borderRadius='16px'}};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});$$('.reveal').forEach(e=>io.observe(e));
+$('#rr').onclick=()=>{const e=+$('#entry').value,s=+$('#sl').value,t=+$('#tp').value;if(!e||!s||!t||e===s) return $('#rrr').textContent='Enter valid values.';const risk=Math.abs(e-s),reward=Math.abs(t-e);$('#rrr').textContent=`Risk : Reward = 1 : ${(reward/risk).toFixed(2)}`};
+$('#ps').onclick=()=>{const a=+$('#account').value,r=+$('#risk').value,d=+$('#distance').value;if(!a||!r||!d)return $('#psr').textContent='Enter valid values.';$('#psr').textContent=`Risk amount: $${(a*r/100).toFixed(2)} • Position units: ${(a*r/100/d).toFixed(2)}`};
+$('#lead').onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);const msg=`Assalam-o-Alaikum, my name is ${f.get('name')}. I need: ${f.get('interest')}. Contact: ${f.get('contact')}. Message: ${f.get('message')||'—'}`;location.href='https://wa.me/923313166573?text='+encodeURIComponent(msg)};
+const canvas=$('#candle-bg'),ctx=canvas.getContext('2d');let candles=[],W=0,H=0,dpr=Math.min(devicePixelRatio||1,2),last=0;function resize(){W=innerWidth;H=innerHeight;canvas.width=W*dpr;canvas.height=H*dpr;canvas.style.width=W+'px';canvas.style.height=H+'px';ctx.setTransform(dpr,0,0,dpr,0,0);const count=Math.ceil(W/28)+8;candles=Array.from({length:count},(_,i)=>({x:i*28-80,o:H*.5+(Math.random()-.5)*H*.42,c:0,w:9,body:20+Math.random()*55,up:Math.random()>.47,s:.35+Math.random()*.8,phase:Math.random()*6.28}));}function draw(t){ctx.clearRect(0,0,W,H);const isDark=document.body.classList.contains('dark');const green=isDark?'rgba(25,205,94,.78)':'rgba(8,130,62,.28)';const red=isDark?'rgba(255,91,91,.28)':'rgba(150,50,50,.16)';candles.forEach((v,i)=>{const drift=Math.sin(t*.00025+v.phase)*7;const x=v.x+drift;const o=v.o+Math.sin(t*.00035+v.phase)*18;const h=v.body+Math.sin(t*.0007+i)*8;const wick=h*.8;const top=o-h/2,bot=o+h/2;ctx.strokeStyle=v.up?green:red;ctx.globalAlpha=.72;ctx.lineWidth=1.2;ctx.beginPath();ctx.moveTo(x,o-wick/2);ctx.lineTo(x,o+wick/2);ctx.stroke();ctx.fillStyle=v.up?green:red;ctx.fillRect(x-v.w/2,top,v.w,h);ctx.fillStyle=v.up?'rgba(71,255,133,.18)':'rgba(255,90,90,.12)';ctx.fillRect(x-v.w/2-2,top-2,v.w+4,h+4);});ctx.globalAlpha=1;requestAnimationFrame(draw)}resize();addEventListener('resize',resize,{passive:true});requestAnimationFrame(draw);
+$$('img').forEach(img=>img.addEventListener('error',()=>{img.classList.add('asset-error');img.style.background='linear-gradient(135deg,#07100b,#12351f)';}));
+
+/* ===== VIP OFFER POPUP (once per session) ===== */
+(()=>{
+  const modal=$('#vipOffer'),close=$('#vipClose');
+  if(!modal) return;
+  const hide=()=>{modal.classList.add('hidden');try{sessionStorage.setItem('twmVipClosed','1')}catch(e){}};
+  try{if(sessionStorage.getItem('twmVipClosed')==='1') hide()}catch(e){}
+  close?.addEventListener('click',hide);
+  modal.querySelectorAll('[data-close-vip]').forEach(x=>x.addEventListener('click',hide));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!modal.classList.contains('hidden'))hide()});
+})();
+
+/* ===== 3D ROTATOR BANNER ===== */
+(()=>{
+  const ring=$('#rotatorRing');
+  if(!ring) return;
+  const cards=ring.querySelectorAll('.rotator-card');
+  const count=cards.length;
+  function layout(){
+    const w=ring.getBoundingClientRect().width||180;
+    const angleStep=360/count;
+    const radius=Math.round((w/2)/Math.tan(Math.PI/count)*1.28);
+    cards.forEach((card,i)=>{card.style.transform=`rotateY(${i*angleStep}deg) translateZ(${radius}px)`});
+  }
+  layout();
+  window.addEventListener('resize',()=>{clearTimeout(window.__rT);window.__rT=setTimeout(layout,150)});
+})();
+
+/* ===== INSTANT ASSISTANT CHAT WIDGET ===== */
+(()=>{
+  const launcher=$('#chatLauncher'),win=$('#chatWindow'),closeBtn=$('#chatCloseBtn'),body=$('#chatBody'),quick=$('#chatQuick'),input=$('#chatInput'),sendBtn=$('#chatSendBtn'),dot=$('#chatDot');
+  if(!launcher||!win) return;
+  const WA='https://wa.me/923313166573';
+  const waLink=m=>`${WA}?text=${encodeURIComponent(m)}`;
+  const FAQ=[
+    {keys:['course','learn','education','basics'],reply:"The trading courses are 100% free — covering basics, technical analysis, price action, risk management and psychology.",cta:"Get Free Courses",wa:"Assalam-o-Alaikum, I want the free trading courses."},
+    {keys:['signal','trade idea'],reply:"Daily market signals are shared for free with entry, TP, SL and context. No result is ever guaranteed.",cta:"Get Daily Signals",wa:"Assalam-o-Alaikum, I want the free daily signals."},
+    {keys:['bot','auto','automation'],reply:"The Auto Bot System supports systematic, risk-aware automation. Returns are indicative targets only, never guaranteed.",cta:"Ask About the Bot",wa:"Assalam-o-Alaikum, I want details about the Auto Bot System."},
+    {keys:['price','cost','fee','deposit'],reply:"Courses and daily signals are completely free. Message us for current Auto Bot pricing details.",cta:"Ask About Pricing",wa:"Assalam-o-Alaikum, I have a question about pricing."},
+    {keys:['proof','result','track record'],reply:"You can see real trading screenshots and results in the Results section on this page.",cta:null,wa:null},
+    {keys:['risk','safe','guarantee','loss'],reply:"Trading always involves risk — no course, signal or bot can guarantee profit.",cta:null,wa:null},
+    {keys:['contact','whatsapp','telegram','human','agent','support'],reply:"You can reach Muzamil directly anytime — WhatsApp is fastest for quick replies.",cta:"Chat on WhatsApp",wa:"Assalam-o-Alaikum, I'd like to talk to you directly."},
+    {keys:['hi','hello','salam','assalam','hey'],reply:"Hey! 👋 Ask me about courses, signals, the auto bot, or pricing — or tap a quick option below.",cta:null,wa:null}
+  ];
+  const QUICK=[{label:'Free Courses',key:'course'},{label:'Daily Signals',key:'signal'},{label:'Auto Bot',key:'bot'},{label:'Pricing',key:'price'},{label:'Talk to Muzamil',key:'contact'}];
+  function addMsg(t,who){const el=document.createElement('div');el.className='chat-msg '+who;el.textContent=t;body.appendChild(el);body.scrollTop=body.scrollHeight;return el}
+  function addCta(label,wa){const el=document.createElement('a');el.className='chat-msg bot';el.style.cssText='display:inline-flex;text-decoration:none;font-weight:800;background:var(--green);color:#031008';el.href=waLink(wa);el.target='_blank';el.rel='noopener';el.textContent=label+' →';body.appendChild(el);body.scrollTop=body.scrollHeight}
+  function showTyping(){const t=document.createElement('div');t.className='chat-typing';t.innerHTML='<span></span><span></span><span></span>';body.appendChild(t);body.scrollTop=body.scrollHeight;return t}
+  function matchFaq(t){const low=t.toLowerCase();return FAQ.find(i=>i.keys.some(k=>low.includes(k)))}
+  function respond(userText){
+    addMsg(userText,'user');
+    const typing=showTyping();
+    setTimeout(()=>{
+      typing.remove();
+      const m=matchFaq(userText);
+      if(m){addMsg(m.reply,'bot');if(m.cta)addCta(m.cta,m.wa)}
+      else{addMsg("I don't have an instant answer for that — Muzamil can help directly on WhatsApp.",'bot');addCta('Continue on WhatsApp',userText)}
+    },420+Math.random()*380);
+  }
+  function renderQuick(){quick.innerHTML='';QUICK.forEach(o=>{const b=document.createElement('button');b.type='button';b.textContent=o.label;b.addEventListener('click',()=>{const item=FAQ.find(f=>f.keys[0]===o.key);if(item)respond(item.keys[0])});quick.appendChild(b)})}
+  function openChat(){win.classList.add('open');if(dot)dot.style.display='none';if(!body.dataset.g){body.dataset.g='1';const typing=showTyping();setTimeout(()=>{typing.remove();addMsg("Assalam-o-Alaikum! 👋 I'm the instant assistant for Trade With Muzamil. Ask about courses, signals, the auto bot or pricing.",'bot');renderQuick()},500)}}
+  function closeChat(){win.classList.remove('open')}
+  launcher.addEventListener('click',()=>win.classList.contains('open')?closeChat():openChat());
+  closeBtn.addEventListener('click',closeChat);
+  sendBtn.addEventListener('click',()=>{const v=input.value.trim();if(!v)return;respond(v);input.value=''});
+  input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();sendBtn.click()}});
+})();
+
+/* ===== PREMIUM ENQUIRY FORM (replaces WhatsApp-only redirect) ===== */
+(()=>{
+  const form=$('#lead');
+  if(!form) return;
+  const successBox=$('#leadSuccess'),submitBtn=$('#leadSubmitBtn'),captchaQ=$('#captchaQ'),captchaInput=$('#pfCaptcha');
+  const WEB3FORMS_KEY='3fc47ac5-a8a4-4579-b932-9e5f5840ffcb';
+  let captchaAnswer=0;
+  function newCaptcha(){const a=Math.floor(Math.random()*8)+2,b=Math.floor(Math.random()*8)+1;captchaAnswer=a+b;captchaQ.textContent=`${a} + ${b} =`;captchaInput.value=''}
+  newCaptcha();
+  function setErr(field,msg){const f=form.querySelector(`[name="${field}"]`)?.closest('.pf-field');if(!f)return;f.classList.toggle('error',!!msg);const e=f.querySelector('.err-msg');if(e)e.textContent=msg||''}
+  form.addEventListener('submit',async(e)=>{
+    e.preventDefault();
+    if(form.botcheck.value)return;
+    const f=new FormData(form);
+    const name=f.get('name'),email=f.get('email'),contact=f.get('contact'),interest=f.get('interest'),message=f.get('message');
+    let ok=true;
+    if(!name||name.trim().length<2){setErr('name','Enter your full name');ok=false}else setErr('name','');
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email||'')){setErr('email','Enter a valid email');ok=false}else setErr('email','');
+    if(!contact||contact.trim().length<7){setErr('contact','Enter a valid WhatsApp number');ok=false}else setErr('contact','');
+    if(parseInt(captchaInput.value,10)!==captchaAnswer){captchaInput.closest('.pf-captcha').style.borderColor='rgba(255,80,80,.6)';ok=false}else captchaInput.closest('.pf-captcha').style.borderColor='';
+    if(!ok)return;
+    submitBtn.classList.add('loading');submitBtn.disabled=true;
+    try{
+      const res=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({access_key:WEB3FORMS_KEY,subject:`New Enquiry: ${interest}`,from_name:'Trade With Muzamil — Website',name,email,whatsapp:contact,interest,message})});
+      const result=await res.json();
+      if(result.success){form.classList.add('hide');successBox.classList.add('show')}
+      else throw new Error(result.message||'submit-failed');
+    }catch(err){setErr('message','Something went wrong — please try again or use WhatsApp.')}
+    finally{submitBtn.classList.remove('loading');submitBtn.disabled=false;newCaptcha()}
+  });
+})();
+})();
+</script>
+</body></html>
